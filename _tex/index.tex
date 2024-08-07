@@ -4,7 +4,9 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-]{agujournal2019}
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -39,7 +41,7 @@
 \makeatother
 \usepackage{xcolor}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -89,45 +91,17 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
-  \fi
-  % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\usepackage{url} %this package should fix any errors with URLs in refs.
-\usepackage{lineno}
-\usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
-\usepackage{soul}
-\linenumbers
+\usepackage{pgfgantt}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{myblue}{rgb}{0.592, 0.737, 0.878}
+\usepackage[acronym, nonumberlist, nopostdot, hyperfirst=false]{glossaries}
+\usepackage{glossary-mcols}
+\loadglsentries{files/abbreviations}
+\setkomafont{title}{\normalfont\large\color{myblue}}
+\setkomafont{section}{\normalfont\large\color{myblue}}
+\setkomafont{subsection}{\normalfont\normalsize\color{myblue}}
+\KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -173,14 +147,14 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+\usepackage[style=nature,]{biblatex}
+\addbibresource{My Library.bib}
 \usepackage{bookmark}
 
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={La Palma Earthquakes},
-  pdfauthor={Steve Purves; Rowan Cockett},
-  pdfkeywords={La Palma, Earthquakes},
+  pdftitle={Upgrade Proposal},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -189,171 +163,173 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\journalname{Earth and Space Science}
-
-\draftfalse
+\title{Upgrade Proposal}
+\author{Julia Marcinkowska}
+\date{}
 
 \begin{document}
-\title{La Palma Earthquakes}
-
-\authors{Steve Purves\affil{1}, Rowan Cockett\affil{1}}
-\affiliation{1}{Curvenote, }
-\correspondingauthor{Steve Purves}{steve@curvenote.com}
+\maketitle
 
 
-\begin{abstract}
-In September 2021, a significant jump in seismic activity on the island
-of La Palma (Canary Islands, Spain) signaled the start of a volcanic
-crisis that still continues at the time of writing. Earthquake data is
-continually collected and published by the Instituto Geográphico
-Nacional (IGN). \ldots{}
-\end{abstract}
+\section{Background}\label{background}
 
-\section*{Plain Language Summary}
-Earthquake data for the island of La Palma from the September 2021
-eruption is found \ldots{}
+\emph{Summary of current state of the field and context within which the
+research is located, covering current theory/state of the evidence and
+referring to relevant literature (500-1,000 words).}
 
+The {NMDA} hypofunction hypothesis of schizophrenia proposes that
+decreased activity of {NMDA} receptors has a key role in the development
+of schizophrenia pathology. The affected {NMDA} receptors are primarily
+localised at {GABA}-ergic fast-spiking {PV} interneurons; where
+decreased activity of {PV} interneurons causes a disinhibition of their
+activity on pyramidal neurons, disrupting the {EI} balance, and leading
+to increased excitation. Hyperactivity in the hippocampus is observed in
+the early stages in schizophrenia, as well as in people at clinical high
+risk of schizophrenia that subsequently develop the disorders,
+suggesting this region might be implicated in the development of the
+pathology at early stages of the disorder. This is consistent with the
+observations that administation of {NMDA} antagonists like phencyclidine
+and ketamine induces behaviours comparable to all three schizoprenia
+symptom dimensions (positive, negative, and cognitive symptoms)
+(citations from \autocite{nakazawa_origin_2020}), and repeated
+administration results in increased release of {DA} in rodent striatum
+citations from \autocite{nakazawa_origin_2020}, suggesting that
+hyperdopaminergia is caused by decreased {NMDA} activity
+\autocite{grace_dopamine_2012,grace_dysregulation_2016}.
 
+Alterations in synaptic function have also been implicated in the
+aetiology of schizophrenia \autocite{howes_synaptic_2023}.
+Excitotoxicity caused by increased glutamatergic activity might be one
+of the contributing factors in the reduction in synaptic connections in
+schizophrenia. Postmortem studies have reported decreased
+\autocite{abdallah_effects_2018}
 
+\section{Aims and objectives}\label{aims-and-objectives}
 
-\section{Introduction}\label{introduction}
+\begin{itemize}
+\tightlist
+\item
+  The aim of my project is to examine the relationship between synaptic
+  connectivity and glutamatergic function. To do this I will measure the
+  difference in glutamate levels (MRS) after administration of LEV and
+  placebo in healthy controls and people with schizophrenia.
+\item
+  The recruitment target is 50 participants: 25 healthy controls (HC)
+  and 25 people with schizophrenia (SZ).
+\end{itemize}
 
-\textsubscript{Source:
-\href{https://juliam98.github.io/phd-upgrade-proposal/index.qmd.html}{Article
-Notebook}}
+\section{Hypotheses under
+investigation}\label{hypotheses-under-investigation}
 
-\textsubscript{Source:
-\href{https://juliam98.github.io/phd-upgrade-proposal/index.qmd.html}{Article
-Notebook}}
+I will aim to answer the following questions:
 
-\begin{figure}[H]
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Does modulating SV2A lead to lower glutamate levels in healthy people?
+\item
+  Does modulating SV2A lead to lower glutamate levels in people with
+  schizophrenia? Is the change different to that in healthy controls?
+\item
+  Does modulating SV2A lead to change in symptoms in schizophrenia?
+\end{enumerate}
 
-\centering{
+\section{Methodology}\label{methodology}
 
-\includegraphics{index_files/figure-pdf/fig-timeline-output-1.pdf}
+\subsection{Study design and data
+collection}\label{study-design-and-data-collection}
 
-}
+\begin{itemize}
+\tightlist
+\item
+  Single-blind, randomised, placebo-controlled trial with cross-over
+  design.
+\end{itemize}
 
-\caption{\label{fig-timeline}Timeline of recent earthquakes on La Palma}
+\subsection{Analysis}\label{analysis}
 
-\end{figure}%
+\begin{itemize}
+\tightlist
+\item
+  MRS data processing with Osprey - Hippocampus and ACC SVS
+\end{itemize}
 
-\textsubscript{Source:
-\href{https://juliam98.github.io/phd-upgrade-proposal/index.qmd.html}{Article
-Notebook}}
+\subsection{Statistics}\label{statistics}
 
-\textsubscript{Source:
-\href{https://juliam98.github.io/phd-upgrade-proposal/index.qmd.html}{Article
-Notebook}}
-
-Based on data up to and including 1971, eruptions on La Palma happen
-every 79.8 years on average.
-
-Studies of the magma systems feeding the volcano, such as Marrero et al.
-(2019), have proposed that there are two main magma reservoirs feeding
-the Cumbre Vieja volcano; one in the mantle (30-40km depth) which
-charges and in turn feeds a shallower crustal reservoir (10-20km depth).
-
-Eight eruptions have been recorded since the late 1400s
-(Figure~\ref{fig-timeline}).
-
-Data and methods are discussed in Section~\ref{sec-data-methods}.
-
-Let \(x\) denote the number of eruptions in a year. Then, \(x\) can be
-modeled by a Poisson distribution
-
-\begin{equation}\phantomsection\label{eq-poisson}{
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-}\end{equation}
-
-where \(\lambda\) is the rate of eruptions per year. Using
-Equation~\ref{eq-poisson}, the probability of an eruption in the next
-\(t\) years can be calculated.
-
-\begin{longtable}[]{@{}ll@{}}
-\caption{Recent historic eruptions on La
-Palma}\label{tbl-history}\tabularnewline
-\toprule\noalign{}
-Name & Year \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Name & Year \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Current & 2021 \\
-Teneguía & 1971 \\
-Nambroque & 1949 \\
-El Charco & 1712 \\
-Volcán San Antonio & 1677 \\
-Volcán San Martin & 1646 \\
-Tajuya near El Paso & 1585 \\
-Montaña Quemada & 1492 \\
-\end{longtable}
-
-Table~\ref{tbl-history} summarises the eruptions recorded since the
-colonization of the islands by Europeans in the late 1400s.
-
-\begin{figure}
-
-\centering{
-
-\includegraphics{images/la-palma-map.png}
-
-}
-
-\caption{\label{fig-map}Map of La Palma}
-
-\end{figure}%
-
-La Palma is one of the west most islands in the Volcanic Archipelago of
-the Canary Islands (Figure~\ref{fig-map}).
+\begin{itemize}
+\tightlist
+\item
+  Statistical analysis: ANOVA / t-test (within and between group). Power
+  calculations.
+\item
+  I will compare the effect of levetiracetam on Glx levels in healthy
+  controls (HC) and patients with schizophrenia (SZ). This will be
+  visualised on a raincloud plot such as the one below. The data used in
+  this graph is made up for the purpose of illustrating the types of
+  comparisons and data visualisations I plan on using.
+\end{itemize}
 
 \begin{figure}[H]
 
 \centering{
 
-\includegraphics{index_files/figure-latex/notebooks-data-screening-fig-spatial-plot-output-1.png}
+\includegraphics{index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png}
 
 }
 
-\caption{\label{fig-spatial-plot}Locations of earthquakes on La Palma
-since 2017.}
+\caption{\label{fig-lev_hc_vs_sz}Comparison of GLX levels change between
+placebo and levetiracetam in HC and SZ}
 
 \end{figure}%
 
 \textsubscript{Source:
-\href{https://juliam98.github.io/phd-upgrade-proposal/index.qmd.html}{Article
-Notebook}}
+\href{https://juliam98.github.io/phd-upgrade-proposal/notebooks/plots-preview.html\#cell-fig-lev_hc_vs_sz}{Plots}}
 
-Figure~\ref{fig-spatial-plot} shows the location of recent Earthquakes
-on La Palma.
+\section{Progress made to date, including pilot work, if
+applicable}\label{progress-made-to-date-including-pilot-work-if-applicable}
 
-\section{Data \& Methods}\label{sec-data-methods}
+\section{Planned future work}\label{planned-future-work}
 
-\section{Conclusion}\label{conclusion}
+\section{Contribution to existing
+knowledge.}\label{contribution-to-existing-knowledge.}
 
-\section*{References}\label{references}
-\addcontentsline{toc}{section}{References}
+\textbf{How the research will form a distinct contribution to existing
+knowledge on the subject and afford evidence of originality shown by
+discovery of new facts or exercise of independent critical power}
 
-\vspace{1em}
+\section{Personal share in
+investigations}\label{personal-share-in-investigations}
+
+\textbf{Where work is done in conjunction with the supervisor and/or
+with collaborators or other students, a statement of the candidate's own
+personal share in the investigations}
+
+\section{Timeline for the remainder of
+studies.}\label{timeline-for-the-remainder-of-studies.}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png}
+
+}
+
+\caption{\label{fig-gantt-chart}Gantt chart of planned work during my
+PhD}
+
+\end{figure}%
 
 \textsubscript{Source:
-\href{https://juliam98.github.io/phd-upgrade-proposal/index.qmd.html}{Article
-Notebook}}
+\href{https://juliam98.github.io/phd-upgrade-proposal/notebooks/plots-preview.html\#cell-fig-gantt-chart}{Plots}}
 
-\phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-marrero2019}
-Marrero, J., García, A., Berrocoso, M., Llinares, Á., Rodríguez-Losada,
-A., \& Ortiz, R. (2019). Strategies for the development of volcanic
-hazard maps in monogenetic volcanic fields: The example of {La} {Palma}
-({Canary} {Islands}). \emph{Journal of Applied Volcanology}, \emph{8}.
-\url{https://doi.org/10.1186/s13617-019-0085-5}
+\newpage{}
 
-\end{CSLReferences}
+\section{References}\label{references}
+
+\printbibliography[heading=none]
+
 
 
 

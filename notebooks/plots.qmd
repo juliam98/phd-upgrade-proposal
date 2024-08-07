@@ -1,0 +1,80 @@
+---
+title: Plots 
+description: Plots I have used in this document
+---
+
+Here is a graph made with totally fabricated data because I enjoy doing data visualisation and even though I don't have the data yet, I do have a pretty graph. 
+```{r}
+#| cache: true
+#| warning: false
+#| error: false
+#| echo: false
+#| output: true
+#| label: fig-lev_hc_vs_sz
+#| fig-cap: "Comparison of GLX levels change between\nplacebo and levetiracetam in HC and SZ"
+library(ggplot2)
+library(ggrain)
+library(wesanderson)
+
+glx <- c(rnorm(25, mean=45, sd=10), rnorm(25, mean=45, sd=13), rnorm(25, mean=69, sd=10), rnorm(25, mean=45, sd=10))
+group <- c(replicate(50, "HC"), replicate(50, "SZ"))
+dosing <- c(replicate(25, "Placebo"), replicate(25, "Drug"), replicate(25, "Placebo"), replicate(25, "Drug"))
+id <- c(replicate(2, 101:125), replicate(2, 201:225))
+
+data <- data.frame(id, group, dosing, glx)
+data$dosing <- factor(data$dosing, levels = c('Placebo', 'Drug'))
+data$group <- factor(data$group, levels = c('HC', 'SZ'))
+
+colour_map <- "Pastel1"
+pal <- wes_palette("GrandBudapest1", n=2, type = "discrete")
+# wes_palette("GrandBudapest1", type = "discrete", n=2)
+
+# jpeg(file="files/rain_plot.jpeg", height = 5000, width = 4500, res=400)
+
+rainplot <- ggplot(data[data$dosing %in% c('Placebo', 'Drug'),], aes(dosing, glx, fill = group, color=group)) +
+    geom_rain(alpha = .5, rain.side = 'f2x2', id.long.var = "id",
+            violin.args = list(color = "black", alpha = .7)) +
+    stat_summary(fun = mean, geom = "line", aes(group = group, color = group), lwd=1.5) +
+    # stat_summary(fun = mean, geom = "point", aes(group = group, color = group)) +
+    labs(
+        # title = "Comparison of GLX levels change between\nplacebo and levetiracetam in HC and SZ",
+        x = "Dosing",
+        y = "Concentration of Glx"
+    ) +
+    scale_x_discrete(labels = c('Placebo','Levetiracetam')) +
+    theme_classic(base_size = 22) +
+    theme(plot.title = element_text(hjust = 0.5), legend.position="bottom") +
+    scale_fill_manual(values = pal) +
+    scale_color_manual(values = pal) +
+    guides(fill = 'none', color = 'none')
+    # scale_fill_brewer(palette = colour_map) +
+    # scale_color_brewer(palette = colour_map) 
+
+print(rainplot)
+```
+
+Here is a gantt chart depicting the plan for my PhD:
+```{r}
+#| cache: true
+#| warning: false
+#| error: false
+#| echo: false
+#| output: true
+#| label: fig-gantt-chart
+#| fig-width: 6.5
+#| fig-cap: Gantt chart of planned work during my PhD
+library(plan)
+
+gt_object <- read.gantt("gantt.csv") 
+
+plot(gt_object,
+    # event.label='Report Date', event.time='2024-08-27',
+    col.event=c("red"),
+    col.done=c("lightblue"),
+    col.notdone=c("pink"),
+    main="Gantt Chart"
+    )
+legend("topright", pch=22, pt.cex=2, cex=0.9, pt.bg=c("lightblue", "pink"),
+    border="black",
+    bg="white", xpd=TRUE, legend=c("Completed", "Not Yet Done"))
+```
