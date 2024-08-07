@@ -10,18 +10,19 @@ manuscript:
       href:  https://github.com/juliam98/
   meca-bundle: true
 
+
 format:
   html:
     toc: true
     toc-location: left
     comments:
       hypothesis: true
-    filters:
-      - latex-environment
-    commands: [gls]
     engine: jupyter
     fig-width: 5
     fig-height: 6
+    filters:
+    - latex-environment
+    commands: [gls]
   docx: default
   pdf: 
     toc: false
