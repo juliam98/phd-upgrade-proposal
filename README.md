@@ -1,5 +1,3 @@
-## A Quarto Manuscript Template
+## Julia's PhD upgrade proposal
 
-This is a template repo for generating a manuscript from Quarto that accompanies the tutorial at: [Quarto Manuscripts: VS Code](https://quarto.org/docs/manuscripts/authoring/vscode.html)
-
-
+Julia was feeling extra and decided to write her PhD upgrade proposal in with Quarto to make it look extra fancy and to make some pretty figures, because that's what it's all about in science.

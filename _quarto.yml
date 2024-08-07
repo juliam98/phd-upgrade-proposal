@@ -38,10 +38,6 @@ format:
           \usepackage[acronym, nonumberlist, nopostdot, hyperfirst=false]{glossaries}
           \usepackage{glossary-mcols}
           \loadglsentries{files/abbreviations}
-          \usepackage{tikz}
-          \usepackage{tikzducks}
-          \usepackage{fontspec}
-          \setmainfont{Arial}
           \setkomafont{title}{\normalfont\large\color{myblue}}
           \setkomafont{section}{\normalfont\large\color{myblue}}
           \setkomafont{subsection}{\normalfont\normalsize\color{myblue}}
