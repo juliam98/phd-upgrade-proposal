@@ -1,17 +1,52 @@
 project:
   type: manuscript
+  output-dir: docs
 
-execute:
-  freeze: auto
+manuscript:
+  article: index.qmd
+  code-links: 
+    - text: Github
+      icon: github
+      href:  https://github.com/juliam98/
+  meca-bundle: true
 
 format:
   html:
     toc: true
+    toc-location: left
     comments:
       hypothesis: true
+    filters:
+      - latex-environment
+    commands: [gls]
+    engine: jupyter
+    fig-width: 5
+    fig-height: 6
   docx: default
-  jats: default
-  agu-pdf: default
+  pdf: 
+    toc: false
+    number-sections: false
+    colorlinks: true
+    cite-method: biblatex
+    biblatexoptions: style=nature, 
+    include-in-header:
+      - text: |
+          \usepackage{pgfgantt}
+          \usepackage[dvipsnames]{xcolor}
+          \definecolor{myblue}{rgb}{0.592, 0.737, 0.878}
+          \usepackage[acronym, nonumberlist, nopostdot, hyperfirst=false]{glossaries}
+          \usepackage{glossary-mcols}
+          \loadglsentries{files/abbreviations}
+          \usepackage{tikz}
+          \usepackage{tikzducks}
+          \usepackage{fontspec}
+          \setmainfont{Arial}
+          \setkomafont{title}{\normalfont\large\color{myblue}}
+          \setkomafont{section}{\normalfont\large\color{myblue}}
+          \setkomafont{subsection}{\normalfont\normalsize\color{myblue}}
+
+execute:
+  freeze: auto
 
 
 
