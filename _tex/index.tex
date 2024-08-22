@@ -43,28 +43,14 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
-\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}{
-    \@ifstar
-      \xxxParagraphStar
-      \xxxParagraphNoStar
-  }
-  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
-  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}{
-    \@ifstar
-      \xxxSubParagraphStar
-      \xxxSubParagraphNoStar
-  }
-  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
-  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
-\makeatother
 
 
 \providecommand{\tightlist}{%
@@ -143,7 +129,6 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -162,14 +147,12 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-
 \title{Upgrade Proposal}
-\author{Julia Marcinkowska}
+\author{Julia Marcinkowska \and  \and }
 \date{}
 
 \begin{document}
 \maketitle
-
 
 \section{Background}\label{background}
 
@@ -201,8 +184,18 @@ Alterations in synaptic function have also been implicated in the
 aetiology of schizophrenia \autocite{howes_synaptic_2023}.
 Excitotoxicity caused by increased glutamatergic activity might be one
 of the contributing factors in the reduction in synaptic connections in
-schizophrenia. Postmortem studies have reported decreased
-\autocite{abdallah_effects_2018}
+schizophrenia.
+
+Levetiracetam (LEV) is an anticonvulsant drug that selectively binds to
+SV2A, and works by normalising the excitation inhibition imbalance in
+epilepsy, although it is not clear whether its action is due to increase
+in the release of GABA or decrease in Glutamate. It was also found to be
+helpful in treating subclinical epileptiform discharges in autism
+spectrum disorder (ASD)\autocite{wang_levetiracetam_2017}. Only one
+study tested the effects of LEV in schizophrenia; their findings
+suggesting that LEV can normalise hippocampal hyperactivity
+\autocite{roeske_modulation_2023} where E/I imbalance is understood to
+originate.
 
 \section{Aims and objectives}\label{aims-and-objectives}
 
@@ -221,7 +214,7 @@ schizophrenia. Postmortem studies have reported decreased
 \section{Hypotheses under
 investigation}\label{hypotheses-under-investigation}
 
-I will aim to answer the following questions:
+\textbf{I will aim to answer the following questions}:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -235,42 +228,94 @@ I will aim to answer the following questions:
   Does modulating SV2A lead to change in symptoms in schizophrenia?
 \end{enumerate}
 
+I hypothesise that modulating SV2A with levetiracetam will lead to
+decreased glutamate levels compared to baseline (placebo) in both
+healthy people and in people with schizophrenia. Based on evidence that
+levetiracetam normalised E/I imbalance in epilepsy, I believe that the
+change will be greated in people with schizophrenia than healthy
+controls.
+
 \section{Methodology}\label{methodology}
 
 \subsection{Study design and data
 collection}\label{study-design-and-data-collection}
+
+\subsubsection{Study design}\label{study-design}
 
 \begin{itemize}
 \tightlist
 \item
   Single-blind, randomised, placebo-controlled trial with cross-over
   design.
+\item
+  Participants undergo two MRI scans- one after taking placebo and the
+  other taking levetiracetam.
+\item
+  They are randomised to the order in which they receive them.
+\end{itemize}
+
+\begin{center}
+\includegraphics{files/study_design.png}
+\end{center}
+
+\subsubsection{Measuring glutamate}\label{measuring-glutamate}
+
+\begin{itemize}
+\tightlist
+\item
+  Glutamate is measured in two voxels localised in the ACC and in the
+  Hippocampus. The choice of those regions was based on previous
+  findings of decreased SV2A density ({[}11C{]}UCB-J V\(_T\)) in the ACC
+  in patients with schizophrenia \autocite{onwordi_synaptic_2020}, and
+  an alter relationship between glutamate and SV2A density in the
+  hippocampus \autocite{onwordi_relationship_2021}.
+\item
+  Single voxel spectroscopy (svs) PRESS sequence is used to acquire the
+  signal
+\item
+  I will also report Glx levels to verify if similar differences are
+  observed compared to glutamate signal {[}\^{}This is due to limited
+  ability to separate glutamine and glutamate using the PRESS sequence
+  at 3T{]}.
+\end{itemize}
+
+\subsubsection{Behavioural measures}\label{behavioural-measures}
+
+\begin{itemize}
+\tightlist
+\item
+  Change is symptoms is assessed using Positive and Negative Syndrome
+  Scale (PANSS).
+\item
+  PANSS is administered at the screening appointment, and before and
+  after every scan, to assess any change in symptoms related to
+  levetiracetam.
 \end{itemize}
 
 \subsection{Analysis}\label{analysis}
 
-\begin{itemize}
-\tightlist
-\item
-  MRS data processing with Osprey - Hippocampus and ACC SVS
-\end{itemize}
-
-\subsection{Statistics}\label{statistics}
+\subsubsection{Change in glutamate}\label{change-in-glutamate}
 
 \begin{itemize}
 \tightlist
 \item
-  Statistical analysis: ANOVA / t-test (within and between group). Power
-  calculations.
+  MRS data processing will be done in Osprey, and values of Glu (and
+  Glx) will be extracted for each participant's scans.
+\item
+  To compare the changes in levels of glutamate between participants
+  with schizophrenia and healthy controls I will do a 2x2 ANOVA.
+\item
+  I will aso do power calculations. (mention the ones already done).
 \item
   I will compare the effect of levetiracetam on Glx levels in healthy
   controls (HC) and patients with schizophrenia (SZ). This will be
-  visualised on a raincloud plot such as the one below. The data used in
-  this graph is made up for the purpose of illustrating the types of
-  comparisons and data visualisations I plan on using.
+  visualised on a raincloud plot such as the one below.
+\item
+  Below is example of data visualisation. The data used in this graph is
+  made up.
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}
 
 \centering{
 
@@ -278,13 +323,22 @@ collection}\label{study-design-and-data-collection}
 
 }
 
-\caption{\label{fig-lev_hc_vs_sz}Comparison of GLX levels change between
+\caption{\label{fig-lev_hc_vs_sz}Comparison of Glu levels change between
 placebo and levetiracetam in HC and SZ}
 
 \end{figure}%
 
 \textsubscript{Source:
 \href{https://juliam98.github.io/phd-upgrade-proposal/notebooks/plots-preview.html\#cell-fig-lev_hc_vs_sz}{Plots}}
+
+\subsubsection{Change in symptoms}\label{change-in-symptoms}
+
+\begin{itemize}
+\tightlist
+\item
+  PANSS score for each symptom group and overall PANSS score will be
+  calculated for all participants.
+\end{itemize}
 
 \section{Progress made to date, including pilot work, if
 applicable}\label{progress-made-to-date-including-pilot-work-if-applicable}
@@ -329,7 +383,6 @@ PhD}
 \section{References}\label{references}
 
 \printbibliography[heading=none]
-
 
 
 

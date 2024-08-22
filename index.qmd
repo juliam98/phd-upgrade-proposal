@@ -1,0 +1,87 @@
+---
+title: Upgrade Proposal
+authors:
+  - name: Julia Marcinkowska
+  - orcid: 0009-0007-3120-1816
+  - email: julia.marcinkowska@kcl.ac.uk
+bibliography: "My Library.bib"
+csl: /Users/k21089512/Zotero/styles/nature.csl
+---
+
+# Background
+*Summary of current state of the field and context within which the research is located, covering current theory/state of the evidence and referring to relevant literature (500-1,000 words).*
+
+The [NMDA]{.gls} hypofunction hypothesis of schizophrenia proposes that decreased activity of [NMDA]{.gls} receptors has a key role in the development of schizophrenia pathology. The affected [NMDA]{.gls} receptors are primarily localised at [GABA]{.gls}-ergic fast-spiking [PV]{.gls} interneurons; where decreased activity of [PV]{.gls} interneurons causes a disinhibition of their activity on pyramidal neurons, disrupting the [EI]{.gls} balance, and leading to increased excitation. Hyperactivity in the hippocampus is observed in the early stages in schizophrenia, as well as in people at clinical high risk of schizophrenia that subsequently develop the disorders, suggesting this region might be implicated in the development of the pathology at early stages of the disorder. This is consistent with the observations that administation of [NMDA]{.gls} antagonists like phencyclidine and ketamine induces behaviours comparable to all three schizoprenia symptom dimensions (positive, negative, and cognitive symptoms) (citations from [@nakazawa_origin_2020]), and repeated administration results in increased release of [DA]{.gls} in rodent striatum citations from [@nakazawa_origin_2020], suggesting that hyperdopaminergia is caused by decreased [NMDA]{.gls} activity [@grace_dopamine_2012; @grace_dysregulation_2016].  
+
+Alterations in synaptic function have also been implicated in the aetiology of schizophrenia [@howes_synaptic_2023]. Excitotoxicity caused by increased glutamatergic activity might be one of the contributing factors in the reduction in synaptic connections in schizophrenia. 
+
+Levetiracetam (LEV) is an anticonvulsant drug that selectively binds to SV2A, and works by normalising the excitation inhibition imbalance in epilepsy, although it is not clear whether its action is due to increase in the release of GABA or decrease in Glutamate. It was also found to be helpful in treating subclinical epileptiform discharges in autism spectrum disorder (ASD)[@wang_levetiracetam_2017]. Only one study tested the effects of LEV in schizophrenia; their findings suggesting that LEV can normalise hippocampal hyperactivity [@roeske_modulation_2023] where E/I imbalance is understood to originate. 
+
+```{r}
+# Create a dataframe called df
+Component <- c('N2','P3')
+Latency <- c('150 to 200ms', '625 to 800ms')
+Location <- c('FCz, Fz[@wang_levetiracetam_2017], Cz[@roeske_modulation_2023]', 'Pz, Oz')
+df <- data.frame(Component, Latency, Location)
+knitr::kable(df, booktabs = TRUE)
+```
+
+
+```{r}
+Component <- c('N2','P3')
+Latency <- c('150 to 200ms', '625 to 800ms')
+Location <- c('FCz, Fz[@wang_levetiracetam_2017], Cz[@roeske_modulation_2023]', 'Pz, Oz')
+df <- data.frame(Component, Latency, Location)
+knitr::kable(df, "latex")
+```
+
+# Aims and objectives
+
+-	The aim of my project is to examine the relationship between synaptic connectivity and glutamatergic function. To do this I will measure the difference in glutamate levels (MRS) after administration of LEV and placebo in healthy controls and people with schizophrenia. 
+-	The recruitment target is 50 participants: 25 healthy controls (HC) and 25 people with schizophrenia (SZ).
+
+# Hypotheses under investigation
+
+I will aim to answer the following questions: 
+
+1. Does modulating SV2A lead to lower glutamate levels in healthy people? 
+2. Does modulating SV2A lead to lower glutamate levels in people with schizophrenia? Is the change different to that in healthy controls? 
+3. Does modulating SV2A lead to change in symptoms in schizophrenia?
+
+# Methodology
+
+## Study design and data collection
+
+-	Single-blind, randomised, placebo-controlled trial with cross-over design.
+
+## Analysis
+
+- MRS data processing with Osprey - Hippocampus and ACC SVS
+
+## Statistics
+
+- Statistical analysis: ANOVA / t-test (within and between group). Power calculations. 
+- I will compare the effect of levetiracetam on Glx levels in healthy controls (HC) and patients with schizophrenia (SZ). This will be visualised on a raincloud plot such as the one below. The data used in this graph is made up for the purpose of illustrating the types of comparisons and data visualisations I plan on using.
+
+{{< embed notebooks/plots.qmd#fig-lev_hc_vs_sz >}}
+
+# Progress made to date, including pilot work, if applicable
+
+# Planned future work
+
+# Contribution to existing knowledge.
+**How the research will form a distinct contribution to existing knowledge on the subject and afford evidence of originality shown by discovery of new facts or exercise of independent critical power**
+
+# Personal share in investigations
+**Where work is done in conjunction with the supervisor and/or with collaborators or other students, a statement of the candidate’s own personal share in the investigations**
+
+# Timeline for the remainder of studies.
+
+{{< embed notebooks/plots.qmd#fig-gantt-chart >}}
+
+
+{{< pagebreak >}}
+# References
+
+::: {#refs}
+:::

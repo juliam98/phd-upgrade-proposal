@@ -1,48 +1,171 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.4.551">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Upgrade Proposal</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+    <title>Upgrade Proposal</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -56,38 +179,13 @@ div.csl-indent {
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta name="citation_title" content="Upgrade Proposal">
+     <script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>  
+      <meta name="citation_title" content="Upgrade Proposal">
 <meta name="citation_author" content="Julia Marcinkowska">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The Mini-International Neuropsychiatric Interview (M.I.N.I.): The Development and Validation of a Structured Diagnostic Psychiatric Interview for DSM-IV and ICD-10;,citation_author=David V Sheehan;,citation_author=Yves Lecrubier;,citation_author=K Harnett Sheehan;,citation_author=Patricia Amorim;,citation_author=Juris Janavs;,citation_author=Emmanuelle Weiller;,citation_author=Thierry Hergueta;,citation_author=Roxy Baker;,citation_author=Geoffrey Dunbar;,citation_publication_date=1998;,citation_cover_date=1998;,citation_year=1998;,citation_volume=59;,citation_language=en-US;,citation_journal_title=Journal of clinical psychiatry;">
@@ -656,12 +754,18 @@ window.Quarto = {
 <meta name="citation_reference" content="citation_title=Are There Progressive Brain Changes in Schizophrenia? A Meta-Analysis of Structural Magnetic Resonance Imaging Studies;,citation_author=Bayanne Olabi;,citation_author=Ian Ellison-Wright;,citation_author=Andrew M. McIntosh;,citation_author=Stephen J. Wood;,citation_author=Ed Bullmore;,citation_author=Stephen M. Lawrie;,citation_publication_date=2011-07;,citation_cover_date=2011-07;,citation_year=2011;,citation_fulltext_html_url=https://linkinghub.elsevier.com/retrieve/pii/S0006322311001259;,citation_issue=1;,citation_doi=10.1016/j.biopsych.2011.01.032;,citation_issn=00063223;,citation_volume=70;,citation_language=en-US;,citation_journal_title=Biological Psychiatry;,citation_journal_abbrev=Biological Psychiatry;">
 <meta name="citation_reference" content="citation_title=Synaptic changes in psychiatric and neurological disorders: State-of-the art of in vivo imaging;,citation_author=Oliver Howes;,citation_author=Julia Marcinkowska;,citation_author=Federico Turkheimer;,citation_author=Richard Carr;,citation_publication_date=2024-08-12;,citation_cover_date=2024-08-12;,citation_year=2024;,citation_fulltext_html_url=https://www.nature.com/articles/s41386-024-01943-x;,citation_doi=10.1038/s41386-024-01943-x;,citation_language=en-US;,citation_journal_title=Nature Neuropsychopharmacology;">
 <meta name="citation_reference" content="citation_title=Levetiracetam is associated with decrease in subclinical epileptiform discharges and improved cognitive functions in pediatric patients with autism spectrum disorder;,citation_author=Minjian Wang;,citation_author=Li Jiang;,citation_author=Xiaoju Tang;,citation_publication_date=2017-08;,citation_cover_date=2017-08;,citation_year=2017;,citation_fulltext_html_url=https://www.dovepress.com/levetiracetam-is-associated-with-decrease-in-subclinical-epileptiform--peer-reviewed-article-NDT;,citation_doi=10.2147/NDT.S143966;,citation_issn=1178-2021;,citation_volume=Volume 13;,citation_language=en-US;,citation_journal_title=Neuropsychiatric Disease and Treatment;,citation_journal_abbrev=NDT;">
-<meta name="citation_reference" content="citation_title=Levetiracetam in Early Psychosis;,citation_author=Donald Goff;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://clinicaltrials.gov/study/NCT03129360?id=NCT03129360&amp;amp;amp;limit=10&amp;rank=1&amp;tab=results;">
 </head>
 
-<body>
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Upgrade Proposal</h1>
@@ -687,13 +791,13 @@ window.Quarto = {
               </div>
       </div>
       <div class="quarto-title-meta-column-end quarto-other-formats-target">
-      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
+      </div>
     </div>
 
 
 
     <div class="quarto-other-links-text-target">
-    <div class="quarto-code-links"><div class="quarto-title-meta-heading">Code Links</div><div class="quarto-title-meta-contents"><span style="padding-right: 0.5em;"><a href="https://github.com/juliam98/"><i class="bi bi-github"></i>Github</a>,</span><span><a href="https://juliam98.github.io/"><i class="bi bi-house"></i>Home</a></span></div></div></div>  </div>
+    </div>  </div>
 </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
   <nav id="TOC" role="doc-toc" class="toc-active">
@@ -705,17 +809,9 @@ window.Quarto = {
   <li><a href="#hypotheses-under-investigation" id="toc-hypotheses-under-investigation" class="nav-link" data-scroll-target="#hypotheses-under-investigation">Hypotheses under investigation</a></li>
   <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
   <ul class="collapse">
-  <li><a href="#study-design-and-data-collection" id="toc-study-design-and-data-collection" class="nav-link" data-scroll-target="#study-design-and-data-collection">Study design and data collection</a>
-  <ul class="collapse">
-  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design">Study design</a></li>
-  <li><a href="#measuring-glutamate" id="toc-measuring-glutamate" class="nav-link" data-scroll-target="#measuring-glutamate">Measuring glutamate</a></li>
-  <li><a href="#behavioural-measures" id="toc-behavioural-measures" class="nav-link" data-scroll-target="#behavioural-measures">Behavioural measures</a></li>
-  </ul></li>
-  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a>
-  <ul class="collapse">
-  <li><a href="#change-in-glutamate" id="toc-change-in-glutamate" class="nav-link" data-scroll-target="#change-in-glutamate">Change in glutamate</a></li>
-  <li><a href="#change-in-symptoms" id="toc-change-in-symptoms" class="nav-link" data-scroll-target="#change-in-symptoms">Change in symptoms</a></li>
-  </ul></li>
+  <li><a href="#study-design-and-data-collection" id="toc-study-design-and-data-collection" class="nav-link" data-scroll-target="#study-design-and-data-collection">Study design and data collection</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
+  <li><a href="#statistics" id="toc-statistics" class="nav-link" data-scroll-target="#statistics">Statistics</a></li>
   </ul></li>
   <li><a href="#progress-made-to-date-including-pilot-work-if-applicable" id="toc-progress-made-to-date-including-pilot-work-if-applicable" class="nav-link" data-scroll-target="#progress-made-to-date-including-pilot-work-if-applicable">Progress made to date, including pilot work, if applicable</a></li>
   <li><a href="#planned-future-work" id="toc-planned-future-work" class="nav-link" data-scroll-target="#planned-future-work">Planned future work</a></li>
@@ -724,23 +820,64 @@ window.Quarto = {
   <li><a href="#timeline-for-the-remainder-of-studies." id="toc-timeline-for-the-remainder-of-studies." class="nav-link" data-scroll-target="#timeline-for-the-remainder-of-studies.">Timeline for the remainder of studies.</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="notebooks/plots-preview.html"><i class="bi bi-journal-code"></i>Plots</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-
-
-  
-
-
-<section id="background" class="level1">
+       <section id="background" class="level1">
 <h1>Background</h1>
 <p><em>Summary of current state of the field and context within which the research is located, covering current theory/state of the evidence and referring to relevant literature (500-1,000 words).</em></p>
 <p>The <span class="gls">NMDA</span> hypofunction hypothesis of schizophrenia proposes that decreased activity of <span class="gls">NMDA</span> receptors has a key role in the development of schizophrenia pathology. The affected <span class="gls">NMDA</span> receptors are primarily localised at <span class="gls">GABA</span>-ergic fast-spiking <span class="gls">PV</span> interneurons; where decreased activity of <span class="gls">PV</span> interneurons causes a disinhibition of their activity on pyramidal neurons, disrupting the <span class="gls">EI</span> balance, and leading to increased excitation. Hyperactivity in the hippocampus is observed in the early stages in schizophrenia, as well as in people at clinical high risk of schizophrenia that subsequently develop the disorders, suggesting this region might be implicated in the development of the pathology at early stages of the disorder. This is consistent with the observations that administation of <span class="gls">NMDA</span> antagonists like phencyclidine and ketamine induces behaviours comparable to all three schizoprenia symptom dimensions (positive, negative, and cognitive symptoms) (citations from<span class="citation" data-cites="nakazawa_origin_2020"><sup><a href="#ref-nakazawa_origin_2020" role="doc-biblioref">1</a></sup></span>), and repeated administration results in increased release of <span class="gls">DA</span> in rodent striatum citations from<span class="citation" data-cites="nakazawa_origin_2020"><sup><a href="#ref-nakazawa_origin_2020" role="doc-biblioref">1</a></sup></span>, suggesting that hyperdopaminergia is caused by decreased <span class="gls">NMDA</span> activity<span class="citation" data-cites="grace_dopamine_2012 grace_dysregulation_2016"><sup><a href="#ref-grace_dopamine_2012" role="doc-biblioref">2</a>,<a href="#ref-grace_dysregulation_2016" role="doc-biblioref">3</a></sup></span>.</p>
 <p>Alterations in synaptic function have also been implicated in the aetiology of schizophrenia<span class="citation" data-cites="howes_synaptic_2023"><sup><a href="#ref-howes_synaptic_2023" role="doc-biblioref">4</a></sup></span>. Excitotoxicity caused by increased glutamatergic activity might be one of the contributing factors in the reduction in synaptic connections in schizophrenia.</p>
 <p>Levetiracetam (LEV) is an anticonvulsant drug that selectively binds to SV2A, and works by normalising the excitation inhibition imbalance in epilepsy, although it is not clear whether its action is due to increase in the release of GABA or decrease in Glutamate. It was also found to be helpful in treating subclinical epileptiform discharges in autism spectrum disorder (ASD)<span class="citation" data-cites="wang_levetiracetam_2017"><sup><a href="#ref-wang_levetiracetam_2017" role="doc-biblioref">5</a></sup></span>. Only one study tested the effects of LEV in schizophrenia; their findings suggesting that LEV can normalise hippocampal hyperactivity<span class="citation" data-cites="roeske_modulation_2023"><sup><a href="#ref-roeske_modulation_2023" role="doc-biblioref">6</a></sup></span> where E/I imbalance is understood to originate.</p>
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dataframe called df</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Component <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'N2'</span>,<span class="st">'P3'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Latency <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'150 to 200ms'</span>, <span class="st">'625 to 800ms'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Location <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'FCz, Fz[@wang_levetiracetam_2017], Cz[@roeske_modulation_2023]'</span>, <span class="st">'Pz, Oz'</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Component, Latency, Location)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(df, <span class="at">booktabs =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Latency</th>
+<th style="text-align: left;">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">N2</td>
+<td style="text-align: left;">150 to 200ms</td>
+<td style="text-align: left;">FCz, Fz<span class="citation" data-cites="wang_levetiracetam_2017"><sup><a href="#ref-wang_levetiracetam_2017" role="doc-biblioref">5</a></sup></span>, Cz<span class="citation" data-cites="roeske_modulation_2023"><sup><a href="#ref-roeske_modulation_2023" role="doc-biblioref">6</a></sup></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P3</td>
+<td style="text-align: left;">625 to 800ms</td>
+<td style="text-align: left;">Pz, Oz</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Component <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'N2'</span>,<span class="st">'P3'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Latency <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'150 to 200ms'</span>, <span class="st">'625 to 800ms'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Location <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'FCz, Fz[@wang_levetiracetam_2017], Cz[@roeske_modulation_2023]'</span>, <span class="st">'Pz, Oz'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Component, Latency, Location)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(df, <span class="st">"latex"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+</div>
+</div></div>
 </section>
 <section id="aims-and-objectives" class="level1">
 <h1>Aims and objectives</h1>
@@ -751,86 +888,92 @@ window.Quarto = {
 </section>
 <section id="hypotheses-under-investigation" class="level1">
 <h1>Hypotheses under investigation</h1>
-<p><strong>I will aim to answer the following questions</strong>:</p>
+<p>I will aim to answer the following questions:</p>
 <ol type="1">
 <li>Does modulating SV2A lead to lower glutamate levels in healthy people?</li>
 <li>Does modulating SV2A lead to lower glutamate levels in people with schizophrenia? Is the change different to that in healthy controls?</li>
 <li>Does modulating SV2A lead to change in symptoms in schizophrenia?</li>
 </ol>
-<p>I hypothesise that modulating SV2A with levetiracetam will lead to decreased glutamate levels compared to baseline (placebo) in both healthy people and in people with schizophrenia. Based on evidence that levetiracetam normalised E/I imbalance in epilepsy, I believe that the change will be greated in people with schizophrenia than healthy controls.</p>
 </section>
 <section id="methodology" class="level1">
 <h1>Methodology</h1>
 <section id="study-design-and-data-collection" class="level2">
 <h2 class="anchored" data-anchor-id="study-design-and-data-collection">Study design and data collection</h2>
-<section id="study-design" class="level3">
-<h3 class="anchored" data-anchor-id="study-design">Study design</h3>
 <ul>
 <li>Single-blind, randomised, placebo-controlled trial with cross-over design.</li>
-<li>Participants undergo two MRI scans- one after taking placebo and the other taking levetiracetam.</li>
-<li>They are randomised to the order in which they receive them.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="files/study_design.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="files/study_design.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
-</figure>
-</div>
-</section>
-<section id="measuring-glutamate" class="level3">
-<h3 class="anchored" data-anchor-id="measuring-glutamate">Measuring glutamate</h3>
-<ul>
-<li>Glutamate is measured in two voxels localised in the ACC and in the Hippocampus. The choice of those regions was based on previous findings of decreased SV2A density ([11C]UCB-J V<span class="math inline">\(_T\)</span>) in the ACC in patients with schizophrenia<span class="citation" data-cites="onwordi_synaptic_2020"><sup><a href="#ref-onwordi_synaptic_2020" role="doc-biblioref">7</a></sup></span>, and an alter relationship between glutamate and SV2A density in the hippocampus<span class="citation" data-cites="onwordi_relationship_2021"><sup><a href="#ref-onwordi_relationship_2021" role="doc-biblioref">8</a></sup></span>.</li>
-<li>Single voxel spectroscopy (svs) PRESS sequence is used to acquire the signal</li>
-<li>I will also report Glx levels to verify if similar differences are observed compared to glutamate signal [^This is due to limited ability to separate glutamine and glutamate using the PRESS sequence at 3T].</li>
-</ul>
-</section>
-<section id="behavioural-measures" class="level3">
-<h3 class="anchored" data-anchor-id="behavioural-measures">Behavioural measures</h3>
-<ul>
-<li>Change is symptoms is assessed using Positive and Negative Syndrome Scale (PANSS).</li>
-<li>PANSS is administered at the screening appointment, and before and after every scan, to assess any change in symptoms related to levetiracetam.</li>
-</ul>
-</section>
 </section>
 <section id="analysis" class="level2">
 <h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
-<section id="change-in-glutamate" class="level3">
-<h3 class="anchored" data-anchor-id="change-in-glutamate">Change in glutamate</h3>
 <ul>
-<li>MRS data processing will be done in Osprey, and values of Glu (and Glx) will be extracted for each participant’s scans.</li>
-<li>To compare the changes in levels of glutamate between participants with schizophrenia and healthy controls I will do a 2x2 ANOVA.</li>
-<li>I will aso do power calculations. (mention the ones already done).</li>
-<li>I will compare the effect of levetiracetam on Glx levels in healthy controls (HC) and patients with schizophrenia (SZ). This will be visualised on a raincloud plot such as the one below.</li>
-<li>Below is example of data visualisation. The data used in this graph is made up.</li>
+<li>MRS data processing with Osprey - Hippocampus and ACC SVS</li>
 </ul>
-<div class="quarto-embed-nb-cell">
-<div id="cell-fig-lev_hc_vs_sz" class="cell" data-layout-align="center" data-cache="true" data-fig-asp="0.9">
+</section>
+<section id="statistics" class="level2">
+<h2 class="anchored" data-anchor-id="statistics">Statistics</h2>
+<ul>
+<li>Statistical analysis: ANOVA / t-test (within and between group). Power calculations.</li>
+<li>I will compare the effect of levetiracetam on Glx levels in healthy controls (HC) and patients with schizophrenia (SZ). This will be visualised on a raincloud plot such as the one below. The data used in this graph is made up for the purpose of illustrating the types of comparisons and data visualisations I plan on using.</li>
+</ul>
+<div class="quarto-embed-nb-cell" data-notebook="/Users/k21089512/Desktop/Code/Quarto/phd_upgrade/phd-upgrade-proposal/notebooks/plots.qmd" data-notebook-title="Plots" data-notebook-cellid="cell-fig-lev_hc_vs_sz">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="cell-fig-lev_hc_vs_sz" class="cell" data-cache="true" data-fig-width="5">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>library(ggplot2)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>library(ggrain)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>library(wesanderson)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>glx <span class="op">&lt;-</span> c(rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="dv">45</span>, sd<span class="op">=</span><span class="dv">10</span>), rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="dv">45</span>, sd<span class="op">=</span><span class="dv">13</span>), rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="dv">69</span>, sd<span class="op">=</span><span class="dv">10</span>), rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="dv">45</span>, sd<span class="op">=</span><span class="dv">10</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>group <span class="op">&lt;-</span> c(replicate(<span class="dv">50</span>, <span class="st">"HC"</span>), replicate(<span class="dv">50</span>, <span class="st">"SZ"</span>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>dosing <span class="op">&lt;-</span> c(replicate(<span class="dv">25</span>, <span class="st">"Placebo"</span>), replicate(<span class="dv">25</span>, <span class="st">"Drug"</span>), replicate(<span class="dv">25</span>, <span class="st">"Placebo"</span>), replicate(<span class="dv">25</span>, <span class="st">"Drug"</span>))</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">id</span> <span class="op">&lt;-</span> c(replicate(<span class="dv">2</span>, <span class="dv">101</span>:<span class="dv">125</span>), replicate(<span class="dv">2</span>, <span class="dv">201</span>:<span class="dv">225</span>))</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">&lt;-</span> data.frame(<span class="bu">id</span>, group, dosing, glx)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>data$dosing <span class="op">&lt;-</span> factor(data$dosing, levels <span class="op">=</span> c(<span class="st">'Placebo'</span>, <span class="st">'Drug'</span>))</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>data$group <span class="op">&lt;-</span> factor(data$group, levels <span class="op">=</span> c(<span class="st">'HC'</span>, <span class="st">'SZ'</span>))</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>colour_map <span class="op">&lt;-</span> <span class="st">"Pastel1"</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>pal <span class="op">&lt;-</span> wes_palette(<span class="st">"GrandBudapest1"</span>, n<span class="op">=</span><span class="dv">2</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"discrete"</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># wes_palette("GrandBudapest1", type = "discrete", n=2)</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># jpeg(file="files/rain_plot.jpeg", height = 5000, width = 4500, res=400)</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>rainplot <span class="op">&lt;-</span> ggplot(data[data$dosing <span class="op">%</span><span class="kw">in</span><span class="op">%</span> c(<span class="st">'Placebo'</span>, <span class="st">'Drug'</span>),], aes(dosing, glx, fill <span class="op">=</span> group, color<span class="op">=</span>group)) <span class="op">+</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    geom_rain(alpha <span class="op">=</span> <span class="fl">.5</span>, rain.side <span class="op">=</span> <span class="st">'f2x2'</span>, <span class="bu">id</span>.<span class="bu">long</span>.var <span class="op">=</span> <span class="st">"id"</span>,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>            violin.args <span class="op">=</span> <span class="bu">list</span>(color <span class="op">=</span> <span class="st">"black"</span>, alpha <span class="op">=</span> <span class="fl">.7</span>)) <span class="op">+</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    stat_summary(fun <span class="op">=</span> mean, geom <span class="op">=</span> <span class="st">"line"</span>, aes(group <span class="op">=</span> group, color <span class="op">=</span> group), lwd<span class="op">=</span><span class="fl">1.5</span>) <span class="op">+</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># stat_summary(fun = mean, geom = "point", aes(group = group, color = group)) +</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    labs(</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="co"># title = "Comparison of GLX levels change between\nplacebo and levetiracetam in HC and SZ",</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="st">"Dosing"</span>,</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        y <span class="op">=</span> <span class="st">"Concentration of Glx"</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    ) <span class="op">+</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    scale_x_discrete(labels <span class="op">=</span> c(<span class="st">'Placebo'</span>,<span class="st">'Levetiracetam'</span>)) <span class="op">+</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    theme_classic(base_size <span class="op">=</span> <span class="dv">22</span>) <span class="op">+</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    theme(plot.title <span class="op">=</span> element_text(hjust <span class="op">=</span> <span class="fl">0.5</span>), legend.position<span class="op">=</span><span class="st">"bottom"</span>) <span class="op">+</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    scale_fill_manual(values <span class="op">=</span> pal) <span class="op">+</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    scale_color_manual(values <span class="op">=</span> pal) <span class="op">+</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    guides(fill <span class="op">=</span> guide_legend())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Duplicated aesthetics after name standardisation: alphaWarning: Using the `size` aesthetic with geom_polygon was deprecated in ggplot2 3.4.0.
+ℹ Please use the `linewidth` aesthetic instead.</code></pre>
+</div>
 <div class="cell-output cell-output-display">
-<div id="fig-lev_hc_vs_sz" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-lev_hc_vs_sz" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lev_hc_vs_sz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/notebooks-plots-fig-lev_hc_vs_sz-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="index_files/figure-html/notebooks-plots-fig-lev_hc_vs_sz-output-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<div aria-describedby="fig-lev_hc_vs_sz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="index_files/figure-html/notebooks-plots-fig-lev_hc_vs_sz-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="index_files/figure-html/notebooks-plots-fig-lev_hc_vs_sz-output-2.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lev_hc_vs_sz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Comparison of Glu levels change between placebo and levetiracetam in HC and SZ
+Figure&nbsp;1: Comparison of GLX levels change between placebo and levetiracetam in HC and SZ
 </figcaption>
 </figure>
 </div>
 </div>
+</div></div>
 </div>
-<a class="quarto-notebook-link" id="nblink-1" href="notebooks/plots-preview.html#cell-fig-lev_hc_vs_sz">Source: Plots</a></div>
-</section>
-<section id="change-in-symptoms" class="level3">
-<h3 class="anchored" data-anchor-id="change-in-symptoms">Change in symptoms</h3>
-<ul>
-<li>PANSS score for each symptom group and overall PANSS score will be calculated for all participants.</li>
-</ul>
-</section>
 </section>
 </section>
 <section id="progress-made-to-date-including-pilot-work-if-applicable" class="level1">
 <h1>Progress made to date, including pilot work, if applicable</h1>
-<!-- {{< embed notebooks/plots.qmd#fig-recruitment >}} -->
 </section>
 <section id="planned-future-work" class="level1">
 <h1>Planned future work</h1>
@@ -845,13 +988,27 @@ Figure&nbsp;1: Comparison of Glu levels change between placebo and levetiracetam
 </section>
 <section id="timeline-for-the-remainder-of-studies." class="level1">
 <h1>Timeline for the remainder of studies.</h1>
-<div class="quarto-embed-nb-cell">
-<div id="cell-fig-gantt-chart" class="cell" data-cache="true" data-fig-width="6.5">
+<div class="quarto-embed-nb-cell" data-notebook="/Users/k21089512/Desktop/Code/Quarto/phd_upgrade/phd-upgrade-proposal/notebooks/plots.qmd" data-notebook-title="Plots" data-notebook-cellid="cell-fig-gantt-chart">
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="cell-fig-gantt-chart" class="cell" data-cache="true" data-fig-width="6.5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>library(plan)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>gt_object <span class="op">&lt;-</span> read.gantt(<span class="st">"gantt.csv"</span>) </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plot(gt_object,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># event.label='Report Date', event.time='2024-08-27',</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    col.event<span class="op">=</span>c(<span class="st">"red"</span>),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    col.done<span class="op">=</span>c(<span class="st">"lightblue"</span>),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    col.notdone<span class="op">=</span>c(<span class="st">"pink"</span>),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    main<span class="op">=</span><span class="st">"Gantt Chart"</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>legend(<span class="st">"topright"</span>, pch<span class="op">=</span><span class="dv">22</span>, pt.cex<span class="op">=</span><span class="dv">2</span>, cex<span class="op">=</span><span class="fl">0.9</span>, pt.bg<span class="op">=</span>c(<span class="st">"lightblue"</span>, <span class="st">"pink"</span>),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    border<span class="op">=</span><span class="st">"black"</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    bg<span class="op">=</span><span class="st">"white"</span>, xpd<span class="op">=</span>TRUE, legend<span class="op">=</span>c(<span class="st">"Completed"</span>, <span class="st">"Not Yet Done"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="fig-gantt-chart" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/notebooks-plots-fig-gantt-chart-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="index_files/figure-html/notebooks-plots-fig-gantt-chart-output-1.png" class="img-fluid figure-img"></a>
+<div aria-describedby="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="index_files/figure-html/notebooks-plots-fig-gantt-chart-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="index_files/figure-html/notebooks-plots-fig-gantt-chart-output-1.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Gantt chart of planned work during my PhD
@@ -859,8 +1016,8 @@ Figure&nbsp;2: Gantt chart of planned work during my PhD
 </figure>
 </div>
 </div>
+</div></div>
 </div>
-<a class="quarto-notebook-link" id="nblink-2" href="notebooks/plots-preview.html#cell-fig-gantt-chart">Source: Plots</a></div>
 <div style="page-break-after: always;"></div>
 </section>
 <section id="references" class="level1">
@@ -884,22 +1041,14 @@ Figure&nbsp;2: Gantt chart of planned work during my PhD
 <div id="ref-roeske_modulation_2023" class="csl-entry" role="listitem">
 <div class="csl-left-margin">6. </div><div class="csl-right-inline">Roeske, M. J. <em>et al.</em> Modulation of hippocampal activity in schizophrenia with levetiracetam: A randomized, double-blind, cross-over, placebo-controlled trial. <em>Neuropsychopharmacol.</em> (2023) doi:<a href="https://doi.org/10.1038/s41386-023-01730-0">10.1038/s41386-023-01730-0</a>.</div>
 </div>
-<div id="ref-onwordi_synaptic_2020" class="csl-entry" role="listitem">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline">Onwordi, E. C. <em>et al.</em> <a href="https://doi.org/10.1038/s41467-019-14122-0">Synaptic density marker <span>SV2A</span> is reduced in schizophrenia patients and unaffected by antipsychotics in rats</a>. <em>Nat Commun</em> <strong>11</strong>, 246 (2020).</div>
-</div>
-<div id="ref-onwordi_relationship_2021" class="csl-entry" role="listitem">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline">Onwordi, E. C. <em>et al.</em> <a href="https://doi.org/10.1038/s41398-021-01515-3">The relationship between synaptic density marker <span>SV2A</span>, glutamate and <span class="nocase">N-acetyl</span> aspartate levels in healthy volunteers and schizophrenia: A multimodal <span>PET</span> and magnetic resonance spectroscopy brain imaging study</a>. <em>Transl Psychiatry</em> <strong>11</strong>, 393 (2021).</div>
-</div>
 </div>
 <div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;1: Comparison of Glu levels change between placebo and levetiracetam in HC and SZ</span>
-<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;2: Gantt chart of planned work during my PhD</span>
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: Comparison of GLX levels change between placebo and levetiracetam in HC and SZ</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;2: Gantt chart of planned work during my PhD</span>
 </div>
 </section>
-
-</main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -1307,9 +1456,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
@@ -1333,9 +1480,6 @@ window.onload = () => {
   });
 
 };
-          </script>
-
-
-
-
+          </script> 
+  
 </body></html>
