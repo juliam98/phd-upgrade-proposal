@@ -13,6 +13,7 @@ Here is a graph made with totally fabricated data because I enjoy doing data vis
 #| label: fig-lev_hc_vs_sz
 #| fig-cap: "Comparison of Glu levels change between\nplacebo and levetiracetam in HC and SZ"
 #| out-width: 50%
+#| fig-asp: 0.9
 #| fig-align: center
 library(ggplot2)
 library(ggrain)
