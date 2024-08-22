@@ -1,0 +1,13 @@
+{
+    "r.helpPanel.previewLocalPackages": [
+        "/Users/k21089512/Library/R/arm64/4.4/library",
+        "."
+    ],
+    "r.libPaths": [
+        "/Users/k21089512/Library/R/arm64/4.4/library",
+        "/var/folders/sr/znp2zphn5n18yhrs1ys09hfc0000gr/T//RtmpZezN1o/downloaded_packages"
+    ],
+    "r.useRenvLibPath": true,
+    "r.session.useWebServer": true,
+    "r.source.echo": true
+}

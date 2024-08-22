@@ -17,6 +17,24 @@ Alterations in synaptic function have also been implicated in the aetiology of s
 
 Levetiracetam (LEV) is an anticonvulsant drug that selectively binds to SV2A, and works by normalising the excitation inhibition imbalance in epilepsy, although it is not clear whether its action is due to increase in the release of GABA or decrease in Glutamate. It was also found to be helpful in treating subclinical epileptiform discharges in autism spectrum disorder (ASD)[@wang_levetiracetam_2017]. Only one study tested the effects of LEV in schizophrenia; their findings suggesting that LEV can normalise hippocampal hyperactivity [@roeske_modulation_2023] where E/I imbalance is understood to originate. 
 
+```{r}
+# Create a dataframe called df
+Component <- c('N2','P3')
+Latency <- c('150 to 200ms', '625 to 800ms')
+Location <- c('FCz, Fz[@wang_levetiracetam_2017], Cz[@roeske_modulation_2023]', 'Pz, Oz')
+df <- data.frame(Component, Latency, Location)
+knitr::kable(df, booktabs = TRUE)
+```
+
+
+```{r}
+Component <- c('N2','P3')
+Latency <- c('150 to 200ms', '625 to 800ms')
+Location <- c('FCz, Fz[@wang_levetiracetam_2017], Cz[@roeske_modulation_2023]', 'Pz, Oz')
+df <- data.frame(Component, Latency, Location)
+knitr::kable(df, "latex")
+```
+
 # Aims and objectives
 
 -	The aim of my project is to examine the relationship between synaptic connectivity and glutamatergic function. To do this I will measure the difference in glutamate levels (MRS) after administration of LEV and placebo in healthy controls and people with schizophrenia. 
@@ -24,56 +42,30 @@ Levetiracetam (LEV) is an anticonvulsant drug that selectively binds to SV2A, an
 
 # Hypotheses under investigation
 
-**I will aim to answer the following questions**: 
+I will aim to answer the following questions: 
 
 1. Does modulating SV2A lead to lower glutamate levels in healthy people? 
 2. Does modulating SV2A lead to lower glutamate levels in people with schizophrenia? Is the change different to that in healthy controls? 
 3. Does modulating SV2A lead to change in symptoms in schizophrenia?
 
-I hypothesise that modulating SV2A with levetiracetam will lead to decreased glutamate levels compared to baseline (placebo) in both healthy people and in people with schizophrenia. Based on evidence that levetiracetam normalised E/I imbalance in epilepsy, I believe that the change will be greated in people with schizophrenia than healthy controls.   
-
 # Methodology
 
 ## Study design and data collection
 
-### Study design
-
 -	Single-blind, randomised, placebo-controlled trial with cross-over design.
-- Participants undergo two MRI scans- one after taking placebo and the other taking levetiracetam.
-- They are randomised to the order in which they receive them. 
-
-![](files/study_design.png){width=60%, fig-align="center"}
-
-### Measuring glutamate
-
-- Glutamate is measured in two voxels localised in the ACC and in the Hippocampus. The choice of those regions was based on previous findings of decreased SV2A density ([11C]UCB-J V$_T$) in the ACC in patients with schizophrenia [@onwordi_synaptic_2020], and an alter relationship between glutamate and SV2A density in the hippocampus [@onwordi_relationship_2021]. 
-- Single voxel spectroscopy (svs) PRESS sequence is used to acquire the signal
-- I will also report Glx levels to verify if similar differences are observed compared to glutamate signal [^This is due to limited ability to separate glutamine and glutamate using the PRESS sequence at 3T].
-
-### Behavioural measures
-
-- Change is symptoms is assessed using Positive and Negative Syndrome Scale (PANSS). 
-- PANSS is administered at the screening appointment, and before and after every scan, to assess any change in symptoms related to levetiracetam.
 
 ## Analysis
 
-### Change in glutamate
+- MRS data processing with Osprey - Hippocampus and ACC SVS
 
-- MRS data processing will be done in Osprey, and values of Glu (and Glx) will be extracted for each participant's scans. 
-- To compare the changes in levels of glutamate between participants with schizophrenia and healthy controls I will do a 2x2 ANOVA. 
-- I will aso do power calculations. (mention the ones already done).
-- I will compare the effect of levetiracetam on Glx levels in healthy controls (HC) and patients with schizophrenia (SZ). This will be visualised on a raincloud plot such as the one below. 
-- Below is example of data visualisation. The data used in this graph is made up. 
+## Statistics
+
+- Statistical analysis: ANOVA / t-test (within and between group). Power calculations. 
+- I will compare the effect of levetiracetam on Glx levels in healthy controls (HC) and patients with schizophrenia (SZ). This will be visualised on a raincloud plot such as the one below. The data used in this graph is made up for the purpose of illustrating the types of comparisons and data visualisations I plan on using.
 
 {{< embed notebooks/plots.qmd#fig-lev_hc_vs_sz >}}
 
-### Change in symptoms
-
-- PANSS score for each symptom group and overall PANSS score will be calculated for all participants. 
-
 # Progress made to date, including pilot work, if applicable
-
-<!-- {{< embed notebooks/plots.qmd#fig-recruitment >}} -->
 
 # Planned future work
 
