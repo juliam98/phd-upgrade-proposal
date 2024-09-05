@@ -19,7 +19,7 @@ library(ggplot2)
 library(ggrain)
 library(wesanderson)
 
-glx <- c(rnorm(25, mean=45, sd=10), rnorm(25, mean=45, sd=13), rnorm(25, mean=69, sd=10), rnorm(25, mean=45, sd=10))
+glx <- c(rnorm(25, mean=0.45, sd=0.10), rnorm(25, mean=0.45, sd=0.09), rnorm(25, mean=0.69, sd=0.11), rnorm(25, mean=0.45, sd=0.11))
 group <- c(replicate(50, "HC"), replicate(50, "SZ"))
 dosing <- c(replicate(25, "Placebo"), replicate(25, "Drug"), replicate(25, "Placebo"), replicate(25, "Drug"))
 id <- c(replicate(2, 101:125), replicate(2, 201:225))
@@ -61,29 +61,6 @@ rainplot <- ggplot(data[data$dosing %in% c('Placebo', 'Drug'),], aes(dosing, glx
 print(rainplot)
 ```
 
-
-Barplot illustrating recruitment:
-
-```{r}
-#| label: fig-recruitment
-# library
-library(ggplot2)
-
-# create a dataset
-participant_type <- c(rep("SZ" , 2), rep("HC" , 2))
-stage <- rep(c("scanned" , "recruitment goal") , 2)
-value <- c(11, 14, 5, 20)
-data <- data.frame(participant_type,stage,value)
-
-# Grouped
-ggplot(data, aes(fill=stage, y=value, x=participant_type)) + 
-    geom_bar(position="stack", stat="identity", width = 0.5) + 
-    scale_fill_manual(values=c("#D3D3D3", "#f4745e", "#D3D3D3", "#56B4E9")) +
-    theme_void() +
-    coord_flip()
-```
-
-
 Here is a gantt chart depicting the plan for my PhD:
 ```{r}
 #| cache: true
@@ -102,10 +79,10 @@ plot(gt_object,
     # event.label='Report Date', event.time='2024-08-27',
     col.event=c("red"),
     col.done=c("lightblue"),
-    col.notdone=c("pink"),
-    main="Gantt Chart"
+    col.notdone=c("lightblue"),
+    time.labels.by="2 months",
+    time.lines.by="1 month",
+    main="PhD timeline"
     )
-legend("topright", pch=22, pt.cex=2, cex=0.9, pt.bg=c("lightblue", "pink"),
-    border="black",
-    bg="white", xpd=TRUE, legend=c("Completed", "Not Yet Done"))
+    
 ```

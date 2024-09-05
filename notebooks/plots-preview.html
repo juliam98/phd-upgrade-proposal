@@ -211,7 +211,7 @@
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrain)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>glx <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="dv">45</span>, <span class="at">sd=</span><span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="dv">45</span>, <span class="at">sd=</span><span class="dv">13</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="dv">69</span>, <span class="at">sd=</span><span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="dv">45</span>, <span class="at">sd=</span><span class="dv">10</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>glx <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.45</span>, <span class="at">sd=</span><span class="fl">0.10</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.45</span>, <span class="at">sd=</span><span class="fl">0.09</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.69</span>, <span class="at">sd=</span><span class="fl">0.11</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.45</span>, <span class="at">sd=</span><span class="fl">0.11</span>))</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>group <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">replicate</span>(<span class="dv">50</span>, <span class="st">"HC"</span>), <span class="fu">replicate</span>(<span class="dv">50</span>, <span class="st">"SZ"</span>))</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>dosing <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Placebo"</span>), <span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Drug"</span>), <span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Placebo"</span>), <span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Drug"</span>))</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">replicate</span>(<span class="dv">2</span>, <span class="dv">101</span><span class="sc">:</span><span class="dv">125</span>), <span class="fu">replicate</span>(<span class="dv">2</span>, <span class="dv">201</span><span class="sc">:</span><span class="dv">225</span>))</span>
@@ -271,56 +271,26 @@ Comparison of Glu levels change between placebo and levetiracetam in HC and SZ
 </div>
 </div>
 </div></div>
-<p>Barplot illustrating recruitment:</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-recruitment" class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># library</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># create a dataset</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>participant_type <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"SZ"</span> , <span class="dv">2</span>), <span class="fu">rep</span>(<span class="st">"HC"</span> , <span class="dv">2</span>))</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>stage <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"scanned"</span> , <span class="st">"recruitment goal"</span>) , <span class="dv">2</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">5</span>, <span class="dv">20</span>)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(participant_type,stage,value)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Grouped</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">fill=</span>stage, <span class="at">y=</span>value, <span class="at">x=</span>participant_type)) <span class="sc">+</span> </span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">position=</span><span class="st">"stack"</span>, <span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"#D3D3D3"</span>, <span class="st">"#f4745e"</span>, <span class="st">"#D3D3D3"</span>, <span class="st">"#56B4E9"</span>)) <span class="sc">+</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_void</span>() <span class="sc">+</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div id="fig-recruitment" class="quarto-figure quarto-figure-center quarto-float anchored" width="480">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-recruitment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="plots_files/figure-html/fig-recruitment-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="plots_files/figure-html/fig-recruitment-1.png" id="fig-recruitment" class="img-fluid figure-img" width="480"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-recruitment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-</figcaption>
-</figure>
-</div>
-</div>
-</div></div>
 <p>Here is a gantt chart depicting the plan for my PhD:</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="cell-fig-gantt-chart" class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plan)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>gt_object <span class="ot">&lt;-</span> <span class="fu">read.gantt</span>(<span class="st">"gantt.csv"</span>) </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(gt_object,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># event.label='Report Date', event.time='2024-08-27',</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.event=</span><span class="fu">c</span>(<span class="st">"red"</span>),</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.done=</span><span class="fu">c</span>(<span class="st">"lightblue"</span>),</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.notdone=</span><span class="fu">c</span>(<span class="st">"pink"</span>),</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">main=</span><span class="st">"Gantt Chart"</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">pch=</span><span class="dv">22</span>, <span class="at">pt.cex=</span><span class="dv">2</span>, <span class="at">cex=</span><span class="fl">0.9</span>, <span class="at">pt.bg=</span><span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"pink"</span>),</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">border=</span><span class="st">"black"</span>,</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">bg=</span><span class="st">"white"</span>, <span class="at">xpd=</span><span class="cn">TRUE</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Completed"</span>, <span class="st">"Not Yet Done"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-gantt-chart" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plan)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>gt_object <span class="ot">&lt;-</span> <span class="fu">read.gantt</span>(<span class="st">"gantt.csv"</span>) </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(gt_object,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># event.label='Report Date', event.time='2024-08-27',</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.event=</span><span class="fu">c</span>(<span class="st">"red"</span>),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.done=</span><span class="fu">c</span>(<span class="st">"lightblue"</span>),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.notdone=</span><span class="fu">c</span>(<span class="st">"lightblue"</span>),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">time.labels.by=</span><span class="st">"2 months"</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">time.lines.by=</span><span class="st">"1 month"</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">main=</span><span class="st">"PhD timeline"</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-gantt-chart" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="plots_files/figure-html/fig-gantt-chart-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="plots_files/figure-html/fig-gantt-chart-1.png" class="img-fluid figure-img" width="624"></a>
+<a href="plots_files/figure-html/fig-gantt-chart-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="plots_files/figure-html/fig-gantt-chart-1.png" class="img-fluid figure-img" width="624"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Gantt chart of planned work during my PhD
@@ -331,8 +301,7 @@ Gantt chart of planned work during my PhD
 </div></div>
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">Comparison of Glu levels change between placebo and levetiracetam in HC and SZ</span>
-<span class="glightbox-desc lightbox-desc-2"></span>
-<span class="glightbox-desc lightbox-desc-3">Gantt chart of planned work during my PhD</span>
+<span class="glightbox-desc lightbox-desc-2">Gantt chart of planned work during my PhD</span>
 </div>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
@@ -743,7 +712,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
