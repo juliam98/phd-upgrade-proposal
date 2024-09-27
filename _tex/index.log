@@ -853,14 +853,13 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `index.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'index.bbl' not found.
-
-No file index.bbl.
+Package biblatex Info: ... file 'index.bbl' found.
+ (index.bbl)
 Package biblatex Info: Reference section=0 on input line 150.
 Package biblatex Info: Reference segment=0 on input line 150.
 Package hyperref Info: Link coloring ON on input line 150.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 152.
-(/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ot1lmr.fd
+ (/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 152.
@@ -907,279 +906,66 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 162.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 162.
+ [1
 
 
-LaTeX Warning: Citation 'grace_dopamine_2012' on page 1 undefined on input line 162.
-
-
-LaTeX Warning: Citation 'grace_dysregulation_2016' on page 1 undefined on input line 162.
-
-
-LaTeX Warning: Citation 'merritt_nature_2017' on page 1 undefined on input line 166.
-
-
-LaTeX Warning: Citation 'kraguljac_increased_2013' on page 1 undefined on input line 166.
-
-
-LaTeX Warning: Citation 'marsman_glutamate_2013' on page 1 undefined on input line 166.
-
-
-LaTeX Warning: Citation 'nakahara_glutamatergic_2022' on page 1 undefined on input line 166.
-
-
-LaTeX Warning: Citation 'jeon_progressive_2021' on page 1 undefined on input line 169.
-
-
-LaTeX Warning: Citation 'merritt_nature_2017' on page 1 undefined on input line 169.
-
-
-LaTeX Warning: Citation 'nakahara_glutamatergic_2022' on page 1 undefined on input line 172.
-
-
-LaTeX Warning: Citation 'merritt_nature_2017' on page 1 undefined on input line 174.
-
-
-LaTeX Warning: Citation 'bojesen_treatment_2020' on page 1 undefined on input line 176.
-
-
-LaTeX Warning: Citation 'jeon_progressive_2021' on page 1 undefined on input line 176.
-
-
-LaTeX Warning: Citation 'egerton_effects_2017' on page 1 undefined on input line 176.
-
-
-LaTeX Warning: Citation 'fan_glutamatergic_2024' on page 1 undefined on input line 178.
-
-
-LaTeX Warning: Citation 'reyes-madrigal_striatal_2022' on page 1 undefined on input line 178.
-
-
-LaTeX Warning: Citation 'reyes-madrigal_striatal_2022' on page 1 undefined on input line 179.
-
-
-LaTeX Warning: Citation 'egerton_response_2018' on page 1 undefined on input line 182.
-
-
-Overfull \hbox (86.51779pt too wide) in paragraph at lines 159--183
-\T1/lmr/m/n/10.95 (-20) contributing to the development of aberrant dopaminergic signalling$[]$,
- []
-
-
-Underfull \hbox (badness 1062) in paragraph at lines 159--183
-\T1/lmr/m/n/10.95 (+20) increased glutamate in the ACC, hippocampus, and other medial temporal cortical
- []
-
-
-Overfull \hbox (58.54027pt too wide) in paragraph at lines 159--183
-\T1/lmr/m/n/10.95 (-20) regions$[]$.
- []
-
-
-LaTeX Warning: Citation 'nakazawa_spatial_2017' on page 1 undefined on input line 188.
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 184--192
-\T1/lmr/m/n/10.95 (+20) of NMDA receptors has a key role in the development of schizophrenia pathology.
- []
-
-
-LaTeX Warning: Citation 'beck_association_2020' on page 1 undefined on input line 202.
-
-
-LaTeX Warning: Citation 'balla_continuous_2001' on page 1 undefined on input line 204.
-
-
-LaTeX Warning: Citation 'grace_dopamine_2012' on page 1 undefined on input line 206.
-
-
-LaTeX Warning: Citation 'grace_dysregulation_2016' on page 1 undefined on input line 206.
-
-[1
-
-
-{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
-
-LaTeX Warning: Citation 'howes_synaptic_2023' on page 2 undefined on input line 211.
-
-
-LaTeX Warning: Citation 'glantz_apoptotic_2006' on page 2 undefined on input line 215.
-
-
-LaTeX Warning: Citation 'osimo_synaptic_2019' on page 2 undefined on input line 216.
-
-
-LaTeX Warning: Citation 'radhakrishnan_vivo_2021' on page 2 undefined on input line 223.
-
-
-LaTeX Warning: Citation 'onwordi_synaptic_2020' on page 2 undefined on input line 223.
-
-
-LaTeX Warning: Citation 'onwordi_relationship_2021' on page 2 undefined on input line 225.
-
-
-LaTeX Warning: Citation 'onwordi_relationship_2021' on page 2 undefined on input line 228.
-
-
-Overfull \hbox (63.70915pt too wide) in paragraph at lines 210--230
-[]\T1/lmr/m/n/10.95 (-20) Alterations in synaptic function have also been implicated in the aetiology of schizophrenia$[]$
- []
-
-
-Underfull \hbox (badness 3138) in paragraph at lines 210--230
-\T1/lmr/m/n/10.95 (+20) schizophrenia$[]$ and an altered relationship
- []
-
-
-LaTeX Warning: Citation 'wang_levetiracetam_2017' on page 2 undefined on input line 235.
-
-
-LaTeX Warning: Citation 'roeske_modulation_2023' on page 2 undefined on input line 240.
-
-
-LaTeX Warning: Citation 'goff_levetiracetam_2020' on page 2 undefined on input line 243.
-
-
-LaTeX Warning: Citation 'contreras-garcia_levetiracetam_2022' on page 2 undefined on input line 248.
-
-
-LaTeX Warning: Citation 'luzadriana_effect_2018' on page 2 undefined on input line 251.
-
-
-LaTeX Warning: Citation 'contreras-garcia_synaptic_2021' on page 2 undefined on input line 253.
-
-
-LaTeX Warning: Citation 'meehan_levetiracetam_2012' on page 2 undefined on input line 253.
-
-
-LaTeX Warning: Citation 'yang_prolonged_2007' on page 2 undefined on input line 253.
-
-
-LaTeX Warning: Citation 'lee_levetiracetam_2009' on page 2 undefined on input line 253.
-
-
-Underfull \hbox (badness 3000) in paragraph at lines 231--256
-\T1/lmr/m/n/10.95 (+20) evidence from preclinical studies on epilepsy suggests that it might restore E/I
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 231--256
-\T1/lmr/m/n/10.95 (+20) imbalance by increasing the vesicular release of GABA$[]$. On
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 231--256
-\T1/lmr/m/n/10.95 (+20) the other hand there is also evidence for that LEV could be inhibiting glutamate
- []
-
-
-Overfull \hbox (64.42383pt too wide) in paragraph at lines 231--256
-\T1/lmr/m/n/10.95 (-20) release$[]$.
- []
-
-[2]
-
-LaTeX Warning: Citation 'meehan_new_2011' on page 3 undefined on input line 284.
-
-
-LaTeX Warning: Citation 'meehan_levetiracetam_2012' on page 3 undefined on input line 292.
-
-
-LaTeX Warning: Citation 'meehan_new_2011' on page 3 undefined on input line 294.
-
-
-LaTeX Warning: Citation 'loscher_synaptic_2016' on page 3 undefined on input line 294.
-
-
-LaTeX Warning: Citation 'roeske_modulation_2023' on page 3 undefined on input line 301.
-
-
-LaTeX Warning: Citation 'goff_levetiracetam_2020' on page 3 undefined on input line 302.
-
+{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}] [2]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 316.
-(/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
+ (/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3]
-<files/study_design.png, id=41, 1040.88875pt x 669.50125pt>
+)
+<files/study_design.png, id=90, 1040.88875pt x 669.50125pt>
 File: files/study_design.png Graphic file (type png)
 <use files/study_design.png>
 Package pdftex.def Info: files/study_design.png  used on input line 332.
 (pdftex.def)             Requested size: 335.06065pt x 215.51152pt.
-
-
-LaTeX Warning: Citation 'egerton_effects_2017' on page 4 undefined on input line 347.
-
-
-LaTeX Warning: Citation 'onwordi_synaptic_2020' on page 4 undefined on input line 358.
-
-
-LaTeX Warning: Citation 'onwordi_relationship_2021' on page 4 undefined on input line 360.
-
-
-Underfull \hbox (badness 2460) in paragraph at lines 354--362
-\T1/lmr/m/n/10.95 (+20) of decreased SV2A density ([11C]UCB-J V$[]$) in the ACC in patients with
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 354--362
-\T1/lmr/m/n/10.95 (+20) schizophrenia$[]$, and altered relationship between glutamate
- []
-
-[4 <./files/study_design.png>]
-<index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png, id=54, 674.52pt x 606.265pt>
+ [3] [4 <./files/study_design.png>]
+<index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png, id=125, 674.52pt x 606.265pt>
 File: index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png Graphic file (type png)
 <use index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png>
 Package pdftex.def Info: index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png  used on input line 410.
 (pdftex.def)             Requested size: 446.76959pt x 401.56076pt.
- [5] [6 <./index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png>]
-
-LaTeX Warning: Citation 'radhakrishnan_vivo_2021' on page 7 undefined on input line 482.
-
-
-LaTeX Warning: Citation 'onwordi_synaptic_2020' on page 7 undefined on input line 482.
-
-[7]
-<index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png, id=91, 626.34pt x 481.8pt>
+ [5] [6 <./index_files/figure-latex/notebooks-plots-fig-lev_hc_vs_sz-output-2.png>] [7]
+<index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png, id=162, 626.34pt x 481.8pt>
 File: index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png Graphic file (type png)
 <use index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png>
 Package pdftex.def Info: index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png  used on input line 521.
 (pdftex.def)             Requested size: 446.77841pt x 343.67569pt.
  [8 <./index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png>]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
 
-LaTeX Warning: Empty bibliography on input line 537.
+Underfull \hbox (badness 1436) in paragraph at lines 537--537
+\T1/lmr/m/n/10.95 (+20) Schizophrenia and Depression. \T1/lmr/m/it/10.95 (+20) Nature Reviews Neuroscience \T1/lmr/bx/n/10.95 (+20) 17, \T1/lmr/m/n/10.95 (+20) 524^^U532. \T1/lmr/m/sc/10.95 (+20) issn\T1/lmr/m/n/10.95 (+20) :
+ []
 
-[9] (index.aux)
+[9]
+Underfull \hbox (badness 1571) in paragraph at lines 537--537
+\T1/lmr/m/n/10.95 (+20) Schizophrenia. \T1/lmr/m/it/10.95 (+20) Molecular Psychiatry \T1/lmr/bx/n/10.95 (+20) 26, \T1/lmr/m/n/10.95 (+20) 7690^^U7698. \T1/lmr/m/sc/10.95 (+20) issn\T1/lmr/m/n/10.95 (+20) : 1359-4184, 1476-5578.
+ []
+
+[10] [11] [12] (index.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                index
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'index.run.xml'.
 \openout1 = `index.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25572 strings out of 476358
- 478343 string characters out of 5791056
- 1937493 words of memory out of 5000000
- 47201 multiletter control sequences out of 15000+600000
- 619282 words of font info for 133 fonts, out of 8000000 for 9000
+ 25884 strings out of 476358
+ 487694 string characters out of 5791056
+ 1961493 words of memory out of 5000000
+ 47376 multiletter control sequences out of 15000+600000
+ 624129 words of font info for 183 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 108i,7n,107p,10980b,1740s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}</Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx8.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi8.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr12.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr17.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr8.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmri10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on index.pdf (9 pages, 502682 bytes).
+ 108i,7n,107p,10980b,1800s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc}</Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi8.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr12.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr17.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr8.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmri10.pfb></Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on index.pdf (12 pages, 542568 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
  34992 words of extra memory for PDF output out of 35830 (max. 10000000)
 

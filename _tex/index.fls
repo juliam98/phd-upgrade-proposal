@@ -248,6 +248,11 @@ INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/lat
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
 OUTPUT index.bcf
+INPUT index.bbl
+INPUT ./index.bbl
+INPUT ./index.bbl
+INPUT ./index.bbl
+INPUT index.bbl
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
 OUTPUT index.pdf
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/lm/ec-lmr12.tfm
@@ -315,7 +320,6 @@ INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/t
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
@@ -343,15 +347,17 @@ INPUT ./index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png
 INPUT ./index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png
 INPUT ./index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png
 INPUT ./index_files/figure-latex/notebooks-plots-fig-gantt-chart-output-1.png
+INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT index.aux
+INPUT index.run.xml
 OUTPUT index.run.xml
+INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx10.pfb
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx10.pfb
-INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx8.pfb
-INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx8.pfb
+INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb
+INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi8.pfb
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi8.pfb
 INPUT /Users/k21089512/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr10.pfb

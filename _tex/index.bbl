@@ -1,0 +1,2431 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{grace_dopamine_2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=989d7e73afed8c4f4f2309fc3ff8cf1b}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={Anthony\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{fullhash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{fullhashraw}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{bibnamehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authorbibnamehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authornamehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authorfullhash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authorfullhashraw}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00283908}
+      \field{journaltitle}{Neuropharmacology}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Neuropharmacology}
+      \field{shorttitle}{Dopamine System Dysregulation by the Hippocampus}
+      \field{title}{Dopamine System Dysregulation by the Hippocampus: {{Implications}} for the Pathophysiology and Treatment of Schizophrenia}
+      \field{volume}{62}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{1342\bibrangedash 1348}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.neuropharm.2011.05.011
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/DN4RGT42/Grace - 2012 - Dopamine system dysregulation by the hippocampus .pdf;/Users/k21089512/Zotero/storage/G7GTDZKT/Grace - 2012 - Dopamine system dysregulation by the hippocampus .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0028390811001912
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0028390811001912
+      \endverb
+      \keyw{!,DA,Dopamine,GABA,GABAA,Hippocampus,Interneurons,Review,SH-053-2’F-R-CH3,stress,VP}
+    \endentry
+    \entry{grace_dysregulation_2016}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=989d7e73afed8c4f4f2309fc3ff8cf1b}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={Anthony\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{fullhash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{fullhashraw}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{bibnamehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authorbibnamehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authornamehash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authorfullhash}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \strng{authorfullhashraw}{989d7e73afed8c4f4f2309fc3ff8cf1b}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1471-003X, 1471-0048}
+      \field{journaltitle}{Nature Reviews Neuroscience}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{shortjournal}{Nat Rev Neurosci}
+      \field{title}{Dysregulation of the Dopamine System in the Pathophysiology of Schizophrenia and Depression}
+      \field{volume}{17}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{524\bibrangedash 532}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/nrn.2016.57
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/TVIBUID8/Grace - 2016 - Dysregulation of the dopamine system in the pathop.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nrn.2016.57
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nrn.2016.57
+      \endverb
+      \keyw{!!!,Amygdala,Animal Model,DA,DA hypothesis,GABA,Hippocampus,Review,Risk factors,stress,SZ}
+    \endentry
+    \entry{merritt_nature_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0477003d2ebbc8c4fe1e6e13ea6126a0}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8a6a2f6b13d84601942b8dda817acc2d}{%
+           family={Egerton},
+           familyi={E\bibinitperiod},
+           given={Alice},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{671216120fda0adde57b899d80294473}
+      \strng{fullhash}{671216120fda0adde57b899d80294473}
+      \strng{fullhashraw}{671216120fda0adde57b899d80294473}
+      \strng{bibnamehash}{671216120fda0adde57b899d80294473}
+      \strng{authorbibnamehash}{671216120fda0adde57b899d80294473}
+      \strng{authornamehash}{671216120fda0adde57b899d80294473}
+      \strng{authorfullhash}{671216120fda0adde57b899d80294473}
+      \strng{authorfullhashraw}{671216120fda0adde57b899d80294473}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{0586-7614, 1745-1701}
+      \field{issue}{suppl\_1}
+      \field{journaltitle}{Schizophrenia Bulletin}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{shorttitle}{Nature of {{Glutamate Alterations}} in {{Schizophrenia}}}
+      \field{title}{Nature of {{Glutamate Alterations}} in {{Schizophrenia}}: {{A Meta-Analysis}} of {{Proton Magnetic Resonance Spectroscopy Studies}}}
+      \field{volume}{43}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{S84\bibrangedash S84}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/schbul/sbx021.223
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/AHZUTK6S/Merritt and Egerton - 2017 - 165. Nature of Glutamate Alterations in Schizophre.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://academic.oup.com/schizophreniabulletin/article-lookup/doi/10.1093/schbul/sbx021.223
+      \endverb
+      \verb{url}
+      \verb https://academic.oup.com/schizophreniabulletin/article-lookup/doi/10.1093/schbul/sbx021.223
+      \endverb
+      \keyw{Glutamate,Glx,HMRS,Review}
+    \endentry
+    \entry{kraguljac_increased_2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=6e64cdad5a02d00231ec463f2412e553}{%
+           family={Kraguljac},
+           familyi={K\bibinitperiod},
+           given={Nina\bibnamedelima V.},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=1fb59842c3a0349ac3d37e63ed444236}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ec96aef35ac2a024fb0ee0b64c9fcc15}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={Meredith\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=150b7e9ac18d43aafd9cd6ad5df617e7}{%
+           family={Lahti},
+           familyi={L\bibinitperiod},
+           given={Adrienne\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{176d286e743ecec3d526c6d903007df9}
+      \strng{fullhash}{5d00c4f4c4e8b2e306765c6fab622381}
+      \strng{fullhashraw}{5d00c4f4c4e8b2e306765c6fab622381}
+      \strng{bibnamehash}{5d00c4f4c4e8b2e306765c6fab622381}
+      \strng{authorbibnamehash}{5d00c4f4c4e8b2e306765c6fab622381}
+      \strng{authornamehash}{176d286e743ecec3d526c6d903007df9}
+      \strng{authorfullhash}{5d00c4f4c4e8b2e306765c6fab622381}
+      \strng{authorfullhashraw}{5d00c4f4c4e8b2e306765c6fab622381}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{2168-622X}
+      \field{journaltitle}{JAMA Psychiatry}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{JAMA Psychiatry}
+      \field{title}{Increased {{Hippocampal Glutamate}} and {{Volumetric Deficits}} in {{Unmedicated Patients With Schizophrenia}}}
+      \field{volume}{70}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{1294}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1001/jamapsychiatry.2013.2437
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/5GXR3QCP/Kraguljac et al. - 2013 - Increased Hippocampal Glutamate and Volumetric Def.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://archpsyc.jamanetwork.com/article.aspx?doi=10.1001/jamapsychiatry.2013.2437
+      \endverb
+      \verb{url}
+      \verb http://archpsyc.jamanetwork.com/article.aspx?doi=10.1001/jamapsychiatry.2013.2437
+      \endverb
+      \keyw{Glutamate,Hippocampus,HMRS,MRI,Schizophrenia}
+    \endentry
+    \entry{marsman_glutamate_2013}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=6391fe752c4290c53c1ed7826a5b4692}{%
+           family={Marsman},
+           familyi={M\bibinitperiod},
+           given={Anouk},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5d03e294e66127350c68d98bffa1203e}{%
+           family={Van\bibnamedelimb Den\bibnamedelima Heuvel},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Martijn\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=0f95c64d9ff9c57b2f21101125f1a283}{%
+           family={Klomp},
+           familyi={K\bibinitperiod},
+           given={Dennis\bibnamedelimb W.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=00b3a0cb8017674bede4fde7e6fb41e6}{%
+           family={Kahn},
+           familyi={K\bibinitperiod},
+           given={René\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=571011228214b64ad9c6dde7dc88d513}{%
+           family={Luijten},
+           familyi={L\bibinitperiod},
+           given={Peter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=343870d4b0a32768a1c4eacec66f4373}{%
+           family={Hulshoff\bibnamedelima Pol},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Hilleke\bibnamedelima E.},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0d0805abc6ce9f85ca3c0bd73ae14e6}
+      \strng{fullhash}{0265a6167aebff4caeeec31416a3241a}
+      \strng{fullhashraw}{0265a6167aebff4caeeec31416a3241a}
+      \strng{bibnamehash}{f0d0805abc6ce9f85ca3c0bd73ae14e6}
+      \strng{authorbibnamehash}{f0d0805abc6ce9f85ca3c0bd73ae14e6}
+      \strng{authornamehash}{f0d0805abc6ce9f85ca3c0bd73ae14e6}
+      \strng{authorfullhash}{0265a6167aebff4caeeec31416a3241a}
+      \strng{authorfullhashraw}{0265a6167aebff4caeeec31416a3241a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1745-1701, 0586-7614}
+      \field{journaltitle}{Schizophrenia Bulletin}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Glutamate in {{Schizophrenia}}}
+      \field{title}{Glutamate in {{Schizophrenia}}: {{A Focused Review}} and {{Meta-Analysis}} of {{1H-MRS Studies}}}
+      \field{volume}{39}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{120\bibrangedash 129}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1093/schbul/sbr069
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/4RAHQ2E3/Marsman et al. - 2013 - Glutamate in Schizophrenia A Focused Review and M.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://academic.oup.com/schizophreniabulletin/article-lookup/doi/10.1093/schbul/sbr069
+      \endverb
+      \verb{url}
+      \verb https://academic.oup.com/schizophreniabulletin/article-lookup/doi/10.1093/schbul/sbr069
+      \endverb
+      \keyw{Glutamate,HMRS,Meta-analysis}
+    \endentry
+    \entry{nakahara_glutamatergic_2022}{article}{}{}
+      \name{author}{22}{}{%
+        {{hash=c4a8930fdaf4a3f7541bcdd8fce69a97}{%
+           family={Nakahara},
+           familyi={N\bibinitperiod},
+           given={Tomomi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=789fbc31043a48b8e61d997bcd5824d2}{%
+           family={Tsugawa},
+           familyi={T\bibinitperiod},
+           given={Sakiko},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fa1ff0a93e264cf5c1b5384a2bd51908}{%
+           family={Noda},
+           familyi={N\bibinitperiod},
+           given={Yoshihiro},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7c1cb2e422aef4aeb25420ef59e800c9}{%
+           family={Ueno},
+           familyi={U\bibinitperiod},
+           given={Fumihiko},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f85b681c47fc1ba1fbd10dd49cc92edf}{%
+           family={Honda},
+           familyi={H\bibinitperiod},
+           given={Shiori},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cfc20ce645a94980454ac2bdb09ec2e1}{%
+           family={Kinjo},
+           familyi={K\bibinitperiod},
+           given={Megumi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fda9eea9ab619119903bd85f0ca2eb6b}{%
+           family={Segawa},
+           familyi={S\bibinitperiod},
+           given={Hikari},
+           giveni={H\bibinitperiod}}}%
+        {{hash=712d08e5316efabd01047173a9aeb22e}{%
+           family={Hondo},
+           familyi={H\bibinitperiod},
+           given={Nobuaki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=35dc7c9f4a303cf06b89d84438e88bf4}{%
+           family={Mori},
+           familyi={M\bibinitperiod},
+           given={Yukino},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5327b3c72e31f44b8426cb9c24e1d6f3}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={Honoka},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9fdacc955f51d506a1bf6d8c3e32ee5c}{%
+           family={Nakahara},
+           familyi={N\bibinitperiod},
+           given={Kazuho},
+           giveni={K\bibinitperiod}}}%
+        {{hash=661f606b111a3b64941594543bc9fbde}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={Kazunari},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fb25bad6fc978ea203bd20c5985795d9}{%
+           family={Wada},
+           familyi={W\bibinitperiod},
+           given={Masataka},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b7bddc597de2bf020f95e93f8d3d380a}{%
+           family={Tarumi},
+           familyi={T\bibinitperiod},
+           given={Ryosuke},
+           giveni={R\bibinitperiod}}}%
+        {{hash=61484100401942e9cebeff24941bc467}{%
+           family={Iwata},
+           familyi={I\bibinitperiod},
+           given={Yusuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bf68a12a37cf7a9cea2d773dff082dc7}{%
+           family={Plitman},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0720839bfacffde1ec74089db754cda9}{%
+           family={Moriguchi},
+           familyi={M\bibinitperiod},
+           given={Sho},
+           giveni={S\bibinitperiod}}}%
+        {{useprefix=true,hash=7565115dc165f795786bb23c7c5ef9a5}{%
+           family={Fuente-Sandoval},
+           familyi={F\bibinithyphendelim S\bibinitperiod},
+           given={Camilo},
+           giveni={C\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+        {{hash=9af438e6e506f808df0fa0dd9472b9a5}{%
+           family={Uchida},
+           familyi={U\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8d05fe3b1d30ebef5ced81432c837109}{%
+           family={Mimura},
+           familyi={M\bibinitperiod},
+           given={Masaru},
+           giveni={M\bibinitperiod}}}%
+        {{hash=785c26647e8513e44b6d1277cb911e8f}{%
+           family={Graff-Guerrero},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e5b4536efc1c12b40dbf2c8ef7729dd5}{%
+           family={Nakajima},
+           familyi={N\bibinitperiod},
+           given={Shinichiro},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e892ab580f3fe1a9e2408f5feb933d19}
+      \strng{fullhash}{c96cc880e1a83bff24b51395fee77431}
+      \strng{fullhashraw}{c96cc880e1a83bff24b51395fee77431}
+      \strng{bibnamehash}{e892ab580f3fe1a9e2408f5feb933d19}
+      \strng{authorbibnamehash}{e892ab580f3fe1a9e2408f5feb933d19}
+      \strng{authornamehash}{e892ab580f3fe1a9e2408f5feb933d19}
+      \strng{authorfullhash}{c96cc880e1a83bff24b51395fee77431}
+      \strng{authorfullhashraw}{c96cc880e1a83bff24b51395fee77431}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1359-4184, 1476-5578}
+      \field{journaltitle}{Molecular Psychiatry}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Mol Psychiatry}
+      \field{shorttitle}{Glutamatergic and {{GABAergic}} Metabolite Levels in Schizophrenia-Spectrum Disorders}
+      \field{title}{Glutamatergic and {{GABAergic}} Metabolite Levels in Schizophrenia-Spectrum Disorders: A Meta-Analysis of {{1H-magnetic}} Resonance Spectroscopy Studies}
+      \field{volume}{27}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{744\bibrangedash 757}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1038/s41380-021-01297-6
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/ZUF3CQ5J/Nakahara et al. - 2022 - Glutamatergic and GABAergic metabolite levels in s.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41380-021-01297-6
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41380-021-01297-6
+      \endverb
+      \keyw{GABA,Glutamate,Metabolic MRI,MRI,Neuroimaging,R,Review}
+    \endentry
+    \entry{jeon_progressive_2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=6183627af585065de0c5c56cdfc02111}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bcb7256c97fb9ef9e2861958068bff84}{%
+           family={Limongi},
+           familyi={L\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5f59af1deae9b2f281f922330f13f878}{%
+           family={Ford},
+           familyi={F\bibinitperiod},
+           given={Sabrina\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=102fadad880e2e654013282e290afcc1}{%
+           family={Mackinley},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=113cb69051fe52828a8c3e15e6435ced}{%
+           family={Dempster},
+           familyi={D\bibinitperiod},
+           given={Kara},
+           giveni={K\bibinitperiod}}}%
+        {{hash=829ab66564b8ce9c3e5ded33b608c131}{%
+           family={Théberge},
+           familyi={T\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f4e526db1801980e8c46a5433b418c04}{%
+           family={Palaniyappan},
+           familyi={P\bibinitperiod},
+           given={Lena},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1d78be1308f51347e4c1c40ba8a520d}
+      \strng{fullhash}{9352557e3a247a0b17a089005946fc39}
+      \strng{fullhashraw}{9352557e3a247a0b17a089005946fc39}
+      \strng{bibnamehash}{a1d78be1308f51347e4c1c40ba8a520d}
+      \strng{authorbibnamehash}{a1d78be1308f51347e4c1c40ba8a520d}
+      \strng{authornamehash}{a1d78be1308f51347e4c1c40ba8a520d}
+      \strng{authorfullhash}{9352557e3a247a0b17a089005946fc39}
+      \strng{authorfullhashraw}{9352557e3a247a0b17a089005946fc39}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{2632-7899}
+      \field{journaltitle}{Schizophrenia Bulletin Open}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Progressive {{Changes}} in {{Glutamate Concentration}} in {{Early Stages}} of {{Schizophrenia}}}
+      \field{title}{Progressive {{Changes}} in {{Glutamate Concentration}} in {{Early Stages}} of {{Schizophrenia}}: {{A Longitudinal}} 7-{{Tesla MRS Study}}}
+      \field{volume}{2}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{sgaa072}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/schizbullopen/sgaa072
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/KB58PT6S/Jeon et al. - 2021 - Progressive Changes in Glutamate Concentration in Early Stages of Schizophrenia A Longitudinal 7-Te.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://academic.oup.com/schizbullopen/article/doi/10.1093/schizbullopen/sgaa072/6126062
+      \endverb
+      \verb{url}
+      \verb https://academic.oup.com/schizbullopen/article/doi/10.1093/schizbullopen/sgaa072/6126062
+      \endverb
+      \keyw{7T,Glutamate,HMRS,Longitudinal}
+    \endentry
+    \entry{bojesen_treatment_2020}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=15c90299fde7b7020677fa6707038d29}{%
+           family={Bojesen},
+           familyi={B\bibinitperiod},
+           given={Kirsten\bibnamedelima B.},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=395b518c917696e4095d89e872453ee4}{%
+           family={Ebdrup},
+           familyi={E\bibinitperiod},
+           given={Bjørn\bibnamedelima H.},
+           giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=677d281eeda8e13e63791fc644c861fb}{%
+           family={Jessen},
+           familyi={J\bibinitperiod},
+           given={Kasper},
+           giveni={K\bibinitperiod}}}%
+        {{hash=741ed84af9bd52f7474916b2223bc652}{%
+           family={Sigvard},
+           familyi={S\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=941000a34327efd3a93274458ce52866}{%
+           family={Tangmose},
+           familyi={T\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b7edc806a37b011354edc0b0d8359a1c}{%
+           family={Edden},
+           familyi={E\bibinitperiod},
+           given={Richard\bibnamedelima A.E.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f65296640964cee47704d199c0fdea0a}{%
+           family={Larsson},
+           familyi={L\bibinitperiod},
+           given={Henrik\bibnamedelima B.W.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=293181846f722269db962b23e4a0fb37}{%
+           family={Rostrup},
+           familyi={R\bibinitperiod},
+           given={Egill},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3c9f2fdd108e84d2ab8cf9942d32bbc8}{%
+           family={Broberg},
+           familyi={B\bibinitperiod},
+           given={Brian\bibnamedelima V.},
+           giveni={B\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=dfce763d35cccde0d08c803a469707ff}{%
+           family={Glenthøj},
+           familyi={G\bibinitperiod},
+           given={Birte\bibnamedelima Y.},
+           giveni={B\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{80c93f37d04eed06ad85da6ebcd9c253}
+      \strng{fullhash}{f7b732182d5df9c910a4f6b42f904936}
+      \strng{fullhashraw}{f7b732182d5df9c910a4f6b42f904936}
+      \strng{bibnamehash}{80c93f37d04eed06ad85da6ebcd9c253}
+      \strng{authorbibnamehash}{80c93f37d04eed06ad85da6ebcd9c253}
+      \strng{authornamehash}{80c93f37d04eed06ad85da6ebcd9c253}
+      \strng{authorfullhash}{f7b732182d5df9c910a4f6b42f904936}
+      \strng{authorfullhashraw}{f7b732182d5df9c910a4f6b42f904936}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033-2917, 1469-8978}
+      \field{journaltitle}{Psychological Medicine}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{13}
+      \field{shortjournal}{Psychol. Med.}
+      \field{title}{Treatment Response after 6 and 26 Weeks Is Related to Baseline Glutamate and {{GABA}} Levels in Antipsychotic-Naïve Patients with Psychosis}
+      \field{volume}{50}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{2182\bibrangedash 2193}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1017/S0033291719002277
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/8WT2GV9X/Bojesen et al. - 2020 - Treatment response after 6 and 26 weeks is related to baseline glutamate and GABA levels in antipsyc.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0033291719002277/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0033291719002277/type/journal_article
+      \endverb
+      \keyw{Glutamate,HMRS,Longitudinal}
+    \endentry
+    \entry{egerton_effects_2017}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=8a6a2f6b13d84601942b8dda817acc2d}{%
+           family={Egerton},
+           familyi={E\bibinitperiod},
+           given={Alice},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f972f5778cf9ae8d9d149da8ed93998}{%
+           family={Bhachu},
+           familyi={B\bibinitperiod},
+           given={Akarmi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0477003d2ebbc8c4fe1e6e13ea6126a0}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod}}}%
+        {{hash=afd7b76aa8dbe08a4f2d302bbc77a6a8}{%
+           family={McQueen},
+           familyi={M\bibinitperiod},
+           given={Grant},
+           giveni={G\bibinitperiod}}}%
+        {{hash=dca5444c847035d6444a35953b493499}{%
+           family={Szulc},
+           familyi={S\bibinitperiod},
+           given={Agata},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ad135af74897ba0d824e6199f63d020c}{%
+           family={McGuire},
+           familyi={M\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8d5c9b1f4ec1a8ba326e57b2cd73fee}
+      \strng{fullhash}{f9d40071349c6e456134546cc0c08608}
+      \strng{fullhashraw}{f9d40071349c6e456134546cc0c08608}
+      \strng{bibnamehash}{e8d5c9b1f4ec1a8ba326e57b2cd73fee}
+      \strng{authorbibnamehash}{e8d5c9b1f4ec1a8ba326e57b2cd73fee}
+      \strng{authornamehash}{e8d5c9b1f4ec1a8ba326e57b2cd73fee}
+      \strng{authorfullhash}{f9d40071349c6e456134546cc0c08608}
+      \strng{authorfullhashraw}{f9d40071349c6e456134546cc0c08608}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{28}
+      \field{issn}{1664-0640}
+      \field{journaltitle}{Frontiers in Psychiatry}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shortjournal}{Front. Psychiatry}
+      \field{shorttitle}{Effects of {{Antipsychotic Administration}} on {{Brain Glutamate}} in {{Schizophrenia}}}
+      \field{title}{Effects of {{Antipsychotic Administration}} on {{Brain Glutamate}} in {{Schizophrenia}}: {{A Systematic Review}} of {{Longitudinal 1H-MRS Studies}}}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{66}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fpsyt.2017.00066
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/DAIZ36ND/Egerton et al. - 2017 - Effects of Antipsychotic Administration on Brain Glutamate in Schizophrenia A Systematic Review of.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journal.frontiersin.org/article/10.3389/fpsyt.2017.00066/full
+      \endverb
+      \verb{url}
+      \verb http://journal.frontiersin.org/article/10.3389/fpsyt.2017.00066/full
+      \endverb
+      \keyw{antipsychotics,Glutamate,HMRS,Longitudinal,Review}
+    \endentry
+    \entry{fan_glutamatergic_2024}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=01b40f8394289c51d87012868a684e5f}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Lejia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5622b58e57eab2652e0ec8c2d1a4be17}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Liangbing},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4a2fadbab658576ce78072f43c8ab59a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yujue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=73c2a86afe4a522b121f588c162a538f}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xiaoqian},
+           giveni={X\bibinitperiod}}}%
+        {{hash=26557486adfbec19378a3e06ce971132}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Liu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=70fe77d9e7086726308de5176869e32b}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Lijun},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1f1042f5dd309cbf69ff60a2b59cb378}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d4cc7f328ebac2b63992d07c0c7da67f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zongchang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2b6ebb53c3cd4b4ed44121b67d63eb4b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Chunwang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5c254500e19d5a78c3d5a502e541528f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaogang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f4e526db1801980e8c46a5433b418c04}{%
+           family={Palaniyappan},
+           familyi={P\bibinitperiod},
+           given={Lena},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0c251cc27468dfce65755d1708b9c3b}
+      \strng{fullhash}{3f97dd47b8b4c5b3c09c15a40e49afae}
+      \strng{fullhashraw}{3f97dd47b8b4c5b3c09c15a40e49afae}
+      \strng{bibnamehash}{a0c251cc27468dfce65755d1708b9c3b}
+      \strng{authorbibnamehash}{a0c251cc27468dfce65755d1708b9c3b}
+      \strng{authornamehash}{a0c251cc27468dfce65755d1708b9c3b}
+      \strng{authorfullhash}{3f97dd47b8b4c5b3c09c15a40e49afae}
+      \strng{authorfullhashraw}{3f97dd47b8b4c5b3c09c15a40e49afae}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0893-133X, 1740-634X}
+      \field{journaltitle}{Neuropsychopharmacology}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{5}
+      \field{shortjournal}{Neuropsychopharmacol.}
+      \field{shorttitle}{Glutamatergic Basis of Antipsychotic Response in First-Episode Psychosis}
+      \field{title}{Glutamatergic Basis of Antipsychotic Response in First-Episode Psychosis: A Dual Voxel Study of the Anterior Cingulate Cortex}
+      \field{volume}{49}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{845\bibrangedash 853}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/s41386-023-01741-x
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/528ALKAP/Fan et al. - 2024 - Glutamatergic basis of antipsychotic response in first-episode psychosis a dual voxel study of the.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41386-023-01741-x
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41386-023-01741-x
+      \endverb
+      \keyw{ACC,FEP,Glutamate,HMRS,Longitudinal}
+    \endentry
+    \entry{reyes-madrigal_striatal_2022}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=e758a6f1fef45ea6c9da0d82beb875d0}{%
+           family={Reyes-Madrigal},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5c63e9ac19271c781394016ca5e1e804}{%
+           family={Guma},
+           familyi={G\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ca587e57c440cbdddfa553faf97d4033}{%
+           family={León-Ortiz},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3b4e961b8ebbe35b211ef8a26657207b}{%
+           family={Gómez-Cruz},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={Gladys},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d0282ecfb8ca7630aab3316a65ab7eb8}{%
+           family={Mora-Durán},
+           familyi={M\bibinithyphendelim D\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=785c26647e8513e44b6d1277cb911e8f}{%
+           family={Graff-Guerrero},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e26a2a22f79610e090e4b1addce2a44}{%
+           family={Kegeles},
+           familyi={K\bibinitperiod},
+           given={Lawrence\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c4fe06336ad71be2fd0559c3cc96f061}{%
+           family={Chakravarty},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi Mallar},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5c1ce9e7f9c2cfd4a622ead97f8bf34f}{%
+           family={De\bibnamedelima La\bibnamedelima Fuente-Sandoval},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim F\bibinithyphendelim S\bibinitperiod},
+           given={Camilo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9687cbda9d2bd5308e35f6ead84cccbd}
+      \strng{fullhash}{dd2748aed99f5cc09cc88e061a1a1703}
+      \strng{fullhashraw}{dd2748aed99f5cc09cc88e061a1a1703}
+      \strng{bibnamehash}{9687cbda9d2bd5308e35f6ead84cccbd}
+      \strng{authorbibnamehash}{9687cbda9d2bd5308e35f6ead84cccbd}
+      \strng{authornamehash}{9687cbda9d2bd5308e35f6ead84cccbd}
+      \strng{authorfullhash}{dd2748aed99f5cc09cc88e061a1a1703}
+      \strng{authorfullhashraw}{dd2748aed99f5cc09cc88e061a1a1703}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{02785846}
+      \field{journaltitle}{Progress in Neuro-Psychopharmacology and Biological Psychiatry}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{shortjournal}{Progress in Neuro-Psychopharmacology and Biological Psychiatry}
+      \field{title}{Striatal Glutamate, Subcortical Structure and Clinical Response to First-Line Treatment in First-Episode Psychosis Patients}
+      \field{volume}{113}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{110473}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.pnpbp.2021.110473
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/K4KCI89Z/Reyes-Madrigal et al. - 2022 - Striatal glutamate, subcortical structure and clinical response to first-line treatment in first-epi.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0278584621002323
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0278584621002323
+      \endverb
+      \keyw{Glutamate,HMRS,Longitudinal}
+    \endentry
+    \entry{egerton_response_2018}{article}{}{}
+      \name{author}{17}{}{%
+        {{hash=6b5281fdf4a2b5de479b899b08c57334}{%
+           family={Egerton},
+           familyi={E\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=18f3262bc4e083f7234df9cfd1406e06}{%
+           family={Broberg},
+           familyi={B\bibinitperiod},
+           given={B.\bibnamedelimi V.},
+           giveni={B\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=0b394dfed1e9cbdfc7f4258abaae94bf}{%
+           family={Van\bibnamedelima Haren},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=764371fb449f36849540fd32cb91b7f0}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=96887d10557bc959f1952a1a6836624b}{%
+           family={Barker},
+           familyi={B\bibinitperiod},
+           given={G.\bibnamedelimi J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=67cb145f16ffa7fd6dca109aa1dd62d7}{%
+           family={Lythgoe},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9ccb686c61653b633b742f7da2528fc6}{%
+           family={Perez-Iglesias},
+           familyi={P\bibinithyphendelim I\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=47d6eb7f7058659f4f98f834dc0218f2}{%
+           family={Baandrup},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d813c49b8b2bcd47f1fc4d8b8c93f73e}{%
+           family={Düring},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=8d4908ad14db53c8e20d1b494589d774}{%
+           family={Sendt},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi V.},
+           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=aa70b8dc7a7be59b2b1ac47e1e39daf3}{%
+           family={Stone},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6a67e75142e00455a1eb479657c16880}{%
+           family={Rostrup},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b2c9d6d85d0d0aa751075824ebbc7367}{%
+           family={Sommer},
+           familyi={S\bibinitperiod},
+           given={I.\bibnamedelimi E.},
+           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=1d7ddd103f84aa1a32c32317f3e57caf}{%
+           family={Glenthøj},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=20b71b68aa1447cbd5036f1807d36b6f}{%
+           family={Kahn},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=592d5fc3f9ee0bcc2c2ea139db4250fb}{%
+           family={Dazzan},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7bdd67ce5c66ae1af7e6c09174f16054}{%
+           family={McGuire},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b4ef38c56626d84a0bdac3a098aee01}
+      \strng{fullhash}{cb36b33acdf596e2d97bbb850e95c2e3}
+      \strng{fullhashraw}{cb36b33acdf596e2d97bbb850e95c2e3}
+      \strng{bibnamehash}{9b4ef38c56626d84a0bdac3a098aee01}
+      \strng{authorbibnamehash}{9b4ef38c56626d84a0bdac3a098aee01}
+      \strng{authornamehash}{9b4ef38c56626d84a0bdac3a098aee01}
+      \strng{authorfullhash}{cb36b33acdf596e2d97bbb850e95c2e3}
+      \strng{authorfullhashraw}{cb36b33acdf596e2d97bbb850e95c2e3}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1359-4184, 1476-5578}
+      \field{journaltitle}{Molecular Psychiatry}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Mol Psychiatry}
+      \field{shorttitle}{Response to Initial Antipsychotic Treatment in First Episode Psychosis Is Related to Anterior Cingulate Glutamate Levels}
+      \field{title}{Response to Initial Antipsychotic Treatment in First Episode Psychosis Is Related to Anterior Cingulate Glutamate Levels: A Multicentre {{1H-MRS}} Study ({{OPTiMiSE}})}
+      \field{volume}{23}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{2145\bibrangedash 2155}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1038/s41380-018-0082-9
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/QZ2PV4N8/Egerton et al. - 2018 - Response to initial antipsychotic treatment in fir.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41380-018-0082-9
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41380-018-0082-9
+      \endverb
+      \keyw{FEP,Glutamate,NMDA}
+    \endentry
+    \entry{nakazawa_spatial_2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2e2b99644ffebe88ebe8046691a3b481}{%
+           family={Nakazawa},
+           familyi={N\bibinitperiod},
+           given={Kazu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7f0f7ef0aa076505eb1bf4ee50810b88}{%
+           family={Jeevakumar},
+           familyi={J\bibinitperiod},
+           given={Vivek},
+           giveni={V\bibinitperiod}}}%
+        {{hash=36cc038eb0dd795279fe29bf2d320eab}{%
+           family={Nakao},
+           familyi={N\bibinitperiod},
+           given={Kazuhito},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{359dbccc8f9476145ad18b038178533a}
+      \strng{fullhash}{68f14e259938429367795f5c03fefa48}
+      \strng{fullhashraw}{68f14e259938429367795f5c03fefa48}
+      \strng{bibnamehash}{68f14e259938429367795f5c03fefa48}
+      \strng{authorbibnamehash}{68f14e259938429367795f5c03fefa48}
+      \strng{authornamehash}{359dbccc8f9476145ad18b038178533a}
+      \strng{authorfullhash}{68f14e259938429367795f5c03fefa48}
+      \strng{authorfullhashraw}{68f14e259938429367795f5c03fefa48}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{issn}{2334-265X}
+      \field{journaltitle}{npj Schizophrenia}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{npj Schizophr}
+      \field{title}{Spatial and Temporal Boundaries of {{NMDA}} Receptor Hypofunction Leading to Schizophrenia}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{7}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41537-016-0003-3
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/QHTSJPHS/Nakazawa et al. - 2017 - Spatial and temporal boundaries of NMDA receptor h.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41537-016-0003-3
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41537-016-0003-3
+      \endverb
+      \keyw{Animal Model,GABA,Glutamate,NMDA}
+    \endentry
+    \entry{beck_association_2020}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=606ae140d97f044272fb3fcb2a572534}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f3af45c1b85f52588aed64b325e11ab2}{%
+           family={Hindley},
+           familyi={H\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b4dd5b74c333ea5d700dbee95204d60f}{%
+           family={Borgan},
+           familyi={B\bibinitperiod},
+           given={Faith},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c79e0647bd321aaf5239df2ac2798fbb}{%
+           family={Ginestet},
+           familyi={G\bibinitperiod},
+           given={Cedric},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4fea26d05e3693c81c187e4690127ed8}{%
+           family={McCutcheon},
+           familyi={M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=74ae5c4461cdcdc4a909db10730ea0a2}{%
+           family={Brugger},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8426f98cd3562fe738011dbd0631b5b3}{%
+           family={Driesen},
+           familyi={D\bibinitperiod},
+           given={Naomi},
+           giveni={N\bibinitperiod}}}%
+        {{hash=dce519b2c3efbc703e890786a0bf6773}{%
+           family={Ranganathan},
+           familyi={R\bibinitperiod},
+           given={Mohini},
+           giveni={M\bibinitperiod}}}%
+        {{hash=049dc897b3399df90a022e9db01c8577}{%
+           family={D’Souza},
+           familyi={D\bibinitperiod},
+           given={Deepak\bibnamedelima Cyril},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=ea4ba49b61ec4ff1a21350bf68fc2492}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ced4e0a609497212a56e2b79ed3a2603}{%
+           family={Krystal},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=470b495d34cd59f49ac1a0087dda58da}{%
+           family={Howes},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2ac91b175682cc5cc71992747b71373}
+      \strng{fullhash}{31a26017bb6b0d4c6c6db2fc0b24fb78}
+      \strng{fullhashraw}{31a26017bb6b0d4c6c6db2fc0b24fb78}
+      \strng{bibnamehash}{a2ac91b175682cc5cc71992747b71373}
+      \strng{authorbibnamehash}{a2ac91b175682cc5cc71992747b71373}
+      \strng{authornamehash}{a2ac91b175682cc5cc71992747b71373}
+      \strng{authorfullhash}{31a26017bb6b0d4c6c6db2fc0b24fb78}
+      \strng{authorfullhashraw}{31a26017bb6b0d4c6c6db2fc0b24fb78}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{21}
+      \field{issn}{2574-3805}
+      \field{journaltitle}{JAMA Network Open}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{JAMA Netw Open}
+      \field{shorttitle}{Association of {{Ketamine With Psychiatric Symptoms}} and {{Implications}} for {{Its Therapeutic Use}} and for {{Understanding Schizophrenia}}}
+      \field{title}{Association of {{Ketamine With Psychiatric Symptoms}} and {{Implications}} for {{Its Therapeutic Use}} and for {{Understanding Schizophrenia}}: {{A Systematic Review}} and {{Meta-analysis}}}
+      \field{volume}{3}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{e204693}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1001/jamanetworkopen.2020.4693
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/H2XSBH2V/Beck et al. - 2020 - Association of Ketamine With Psychiatric Symptoms .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2766225
+      \endverb
+      \verb{url}
+      \verb https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2766225
+      \endverb
+      \keyw{Glutamate,Ketamine,NMDA,Positive symptoms}
+    \endentry
+    \entry{balla_continuous_2001}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1ee8d41d44f371a84ccf2be2467eadb}{%
+           family={Balla},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{fullhash}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{fullhashraw}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{bibnamehash}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{authorbibnamehash}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{authornamehash}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{authorfullhash}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \strng{authorfullhashraw}{f1ee8d41d44f371a84ccf2be2467eadb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0893133X}
+      \field{journaltitle}{Neuropsychopharmacology}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{Continuous {{Phencyclidine Treatment Induces Schizophrenia-Like Hyperreactivity}} of {{Striatal Dopamine Release}}}
+      \field{volume}{25}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{157\bibrangedash 164}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/S0893-133X(01)00230-5
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/IVJLQ5CT/Balla - 2001 - Continuous Phencyclidine Treatment Induces Schizophrenia-Like Hyperreactivity of Striatal Dopamine R.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/doifinder/10.1016/S0893-133X(01)00230-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/doifinder/10.1016/S0893-133X(01)00230-5
+      \endverb
+      \keyw{Animal Model,DA,NMDA}
+    \endentry
+    \entry{howes_synaptic_2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=470b495d34cd59f49ac1a0087dda58da}{%
+           family={Howes},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=d081d200ee76acc44679ffe767d2d4e9}{%
+           family={Onwordi},
+           familyi={O\bibinitperiod},
+           given={Ellis\bibnamedelima Chika},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8df87674977318abb7ee68c4693ad84a}
+      \strng{fullhash}{8df87674977318abb7ee68c4693ad84a}
+      \strng{fullhashraw}{8df87674977318abb7ee68c4693ad84a}
+      \strng{bibnamehash}{8df87674977318abb7ee68c4693ad84a}
+      \strng{authorbibnamehash}{8df87674977318abb7ee68c4693ad84a}
+      \strng{authornamehash}{8df87674977318abb7ee68c4693ad84a}
+      \strng{authorfullhash}{8df87674977318abb7ee68c4693ad84a}
+      \strng{authorfullhashraw}{8df87674977318abb7ee68c4693ad84a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{11}
+      \field{issn}{1359-4184, 1476-5578}
+      \field{journaltitle}{Molecular Psychiatry}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shortjournal}{Mol Psychiatry}
+      \field{shorttitle}{The Synaptic Hypothesis of Schizophrenia Version {{III}}}
+      \field{title}{The Synaptic Hypothesis of Schizophrenia Version {{III}}: A Master Mechanism}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1038/s41380-023-02043-w
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/6XVLC9XC/Howes and Onwordi - 2023 - The synaptic hypothesis of schizophrenia version I.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41380-023-02043-w
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41380-023-02043-w
+      \endverb
+      \keyw{Review,Schizophrenia,SV2A,UCB-J}
+    \endentry
+    \entry{glantz_apoptotic_2006}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=57a7b05373ec018fdfb4820681863fca}{%
+           family={Glantz},
+           familyi={G\bibinitperiod},
+           given={Leisa\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5eca427abbc316ffec10a02346358766}{%
+           family={Gilmore},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=049f16affbd3e5ebdb8182561b3bae5b}{%
+           family={Lieberman},
+           familyi={L\bibinitperiod},
+           given={Jeffrey\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e3189f85fe673a4d59bf89b07100cd42}{%
+           family={Jarskog},
+           familyi={J\bibinitperiod},
+           given={L.\bibnamedelimi Fredrik},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{13a3cdad1124ff74fb2941ce75706913}
+      \strng{fullhash}{2e28a1f1a790814a36ab44e5049281f5}
+      \strng{fullhashraw}{2e28a1f1a790814a36ab44e5049281f5}
+      \strng{bibnamehash}{2e28a1f1a790814a36ab44e5049281f5}
+      \strng{authorbibnamehash}{2e28a1f1a790814a36ab44e5049281f5}
+      \strng{authornamehash}{13a3cdad1124ff74fb2941ce75706913}
+      \strng{authorfullhash}{2e28a1f1a790814a36ab44e5049281f5}
+      \strng{authorfullhashraw}{2e28a1f1a790814a36ab44e5049281f5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09209964}
+      \field{journaltitle}{Schizophrenia Research}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Schizophrenia Research}
+      \field{title}{Apoptotic Mechanisms and the Synaptic Pathology of Schizophrenia}
+      \field{volume}{81}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{47\bibrangedash 63}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.schres.2005.08.014
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/FXMZGNWQ/Glantz et al. - 2006 - Apoptotic mechanisms and the synaptic pathology of.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0920996405003683
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0920996405003683
+      \endverb
+      \keyw{Glutamate,SV2A}
+    \endentry
+    \entry{osimo_synaptic_2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=5b8b35e26885777a1550baafa0ea088d}{%
+           family={Osimo},
+           familyi={O\bibinitperiod},
+           given={Emanuele\bibnamedelima Felice},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=606ae140d97f044272fb3fcb2a572534}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ca30ce510aae0aed7248c32702aafcc9}{%
+           family={Reis\bibnamedelima Marques},
+           familyi={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=470b495d34cd59f49ac1a0087dda58da}{%
+           family={Howes},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7afce2601d8769f1cba32be4be499f5b}
+      \strng{fullhash}{3974093dd83f25bb5f978fe5c10d3ab6}
+      \strng{fullhashraw}{3974093dd83f25bb5f978fe5c10d3ab6}
+      \strng{bibnamehash}{3974093dd83f25bb5f978fe5c10d3ab6}
+      \strng{authorbibnamehash}{3974093dd83f25bb5f978fe5c10d3ab6}
+      \strng{authornamehash}{7afce2601d8769f1cba32be4be499f5b}
+      \strng{authorfullhash}{3974093dd83f25bb5f978fe5c10d3ab6}
+      \strng{authorfullhashraw}{3974093dd83f25bb5f978fe5c10d3ab6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1359-4184, 1476-5578}
+      \field{journaltitle}{Molecular Psychiatry}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{Mol Psychiatry}
+      \field{shorttitle}{Synaptic Loss in Schizophrenia}
+      \field{title}{Synaptic Loss in Schizophrenia: A Meta-Analysis and Systematic Review of Synaptic Protein and {{mRNA}} Measures}
+      \field{volume}{24}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{549\bibrangedash 561}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1038/s41380-018-0041-5
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/G7MVYT8W/Osimo et al. - 2019 - Synaptic loss in schizophrenia a meta-analysis an.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41380-018-0041-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41380-018-0041-5
+      \endverb
+    \endentry
+    \entry{radhakrishnan_vivo_2021}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=c2e1ed814712119e6e92fc40871554c9}{%
+           family={Radhakrishnan},
+           familyi={R\bibinitperiod},
+           given={Rajiv},
+           giveni={R\bibinitperiod}}}%
+        {{hash=787d33db5c0be5942f10f3e8b623fa91}{%
+           family={Skosnik},
+           familyi={S\bibinitperiod},
+           given={Patrick\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=dce519b2c3efbc703e890786a0bf6773}{%
+           family={Ranganathan},
+           familyi={R\bibinitperiod},
+           given={Mohini},
+           giveni={M\bibinitperiod}}}%
+        {{hash=897f09519a40492aa8443cc9f3b409ee}{%
+           family={Naganawa},
+           familyi={N\bibinitperiod},
+           given={Mika},
+           giveni={M\bibinitperiod}}}%
+        {{hash=68ba3931bb518741e8a363295c98af22}{%
+           family={Toyonaga},
+           familyi={T\bibinitperiod},
+           given={Takuya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=34146709a2481099156ed8e37b85a954}{%
+           family={Finnema},
+           familyi={F\bibinitperiod},
+           given={Sjoerd},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a7c515a4a076c863fb82bb334e9bccf}{%
+           family={Hillmer},
+           familyi={H\bibinitperiod},
+           given={Ansel\bibnamedelima T.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6bb6119924decdda435eaeb076dc742a}{%
+           family={Esterlis},
+           familyi={E\bibinitperiod},
+           given={Irina},
+           giveni={I\bibinitperiod}}}%
+        {{hash=62e28d2d4529db99840fc6879c5ee779}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Yiyun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f682a179a1cc7e07002fe1ea4eeba469}{%
+           family={Nabulsi},
+           familyi={N\bibinitperiod},
+           given={Nabeel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=aea07c02fbcbca764ac12113b67e54a7}{%
+           family={Carson},
+           familyi={C\bibinitperiod},
+           given={Richard\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ac7a8ed03f48795736a074a3c460514c}{%
+           family={D’Souza},
+           familyi={D\bibinitperiod},
+           given={Deepak\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bac27ec812e27cbf744ab348537ad371}
+      \strng{fullhash}{60bd3b55c16ec8d28313ccf018cb15b9}
+      \strng{fullhashraw}{60bd3b55c16ec8d28313ccf018cb15b9}
+      \strng{bibnamehash}{bac27ec812e27cbf744ab348537ad371}
+      \strng{authorbibnamehash}{bac27ec812e27cbf744ab348537ad371}
+      \strng{authornamehash}{bac27ec812e27cbf744ab348537ad371}
+      \strng{authorfullhash}{60bd3b55c16ec8d28313ccf018cb15b9}
+      \strng{authorfullhashraw}{60bd3b55c16ec8d28313ccf018cb15b9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1359-4184, 1476-5578}
+      \field{journaltitle}{Molecular Psychiatry}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Mol Psychiatry}
+      \field{title}{In Vivo Evidence of Lower Synaptic Vesicle Density in Schizophrenia}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{7690\bibrangedash 7698}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/s41380-021-01184-0
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/2SVVZX8D/Radhakrishnan et al. - 2021 - In vivo evidence of lower synaptic vesicle density.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41380-021-01184-0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41380-021-01184-0
+      \endverb
+      \keyw{PET,Schizophrenia,SV2A,UCB-J}
+    \endentry
+    \entry{onwordi_synaptic_2020}{article}{}{}
+      \name{author}{16}{}{%
+        {{hash=d081d200ee76acc44679ffe767d2d4e9}{%
+           family={Onwordi},
+           familyi={O\bibinitperiod},
+           given={Ellis\bibnamedelima Chika},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=16ee619af8b0bc1e65b0b61adecf434b}{%
+           family={Halff},
+           familyi={H\bibinitperiod},
+           given={Els\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2bcef9edd322cb23705cdb141a01172a}{%
+           family={Whitehurst},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=db88a0127cd576ba38fe6862282458d9}{%
+           family={Mansur},
+           familyi={M\bibinitperiod},
+           given={Ayla},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c6b3431fa0d7bf77532110de0f45c39b}{%
+           family={Cotel},
+           familyi={C\bibinitperiod},
+           given={Marie-Caroline},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=7b28e67e59e5cf7137a0456c5681a072}{%
+           family={Wells},
+           familyi={W\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=513cbf0fe1c92add07a00a3b311a3fdc}{%
+           family={Creeney},
+           familyi={C\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod}}}%
+        {{hash=aee4e7da3724507803f7ec56e47970f6}{%
+           family={Bonsall},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7fb86dd80e0f03c6216f34c175915053}{%
+           family={Rogdaki},
+           familyi={R\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=71f581f478c3cd13c97a63b4402e2fff}{%
+           family={Shatalina},
+           familyi={S\bibinitperiod},
+           given={Ekaterina},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ca30ce510aae0aed7248c32702aafcc9}{%
+           family={Reis\bibnamedelima Marques},
+           familyi={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e01737569d5a590a521791bf42f7540f}{%
+           family={Rabiner},
+           familyi={R\bibinitperiod},
+           given={Eugenii\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=caf9a4dc4d33cb7f8221b4501cd131de}{%
+           family={Gunn},
+           familyi={G\bibinitperiod},
+           given={Roger\bibnamedelima N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=cb02bbbdb19715dd78d62a07151b990f}{%
+           family={Natesan},
+           familyi={N\bibinitperiod},
+           given={Sridhar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=24b9558b3c7308391886ba7e6d8afac6}{%
+           family={Vernon},
+           familyi={V\bibinitperiod},
+           given={Anthony\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=470b495d34cd59f49ac1a0087dda58da}{%
+           family={Howes},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{fullhash}{6df88086dd31c753209c472ac0986b3b}
+      \strng{fullhashraw}{6df88086dd31c753209c472ac0986b3b}
+      \strng{bibnamehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{authorbibnamehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{authornamehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{authorfullhash}{6df88086dd31c753209c472ac0986b3b}
+      \strng{authorfullhashraw}{6df88086dd31c753209c472ac0986b3b}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{Synaptic Density Marker {{SV2A}} Is Reduced in Schizophrenia Patients and Unaffected by Antipsychotics in Rats}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{246}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-019-14122-0
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/MBVMQPTI/Onwordi et al. - 2020 - Synaptic density marker SV2A is reduced in schizop.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/articles/s41467-019-14122-0
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/articles/s41467-019-14122-0
+      \endverb
+      \keyw{Animal Model,PET,SV2A}
+    \endentry
+    \entry{onwordi_relationship_2021}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=d081d200ee76acc44679ffe767d2d4e9}{%
+           family={Onwordi},
+           familyi={O\bibinitperiod},
+           given={Ellis\bibnamedelima Chika},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=2bcef9edd322cb23705cdb141a01172a}{%
+           family={Whitehurst},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=db88a0127cd576ba38fe6862282458d9}{%
+           family={Mansur},
+           familyi={M\bibinitperiod},
+           given={Ayla},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a33076b313bad40ccf46c79479aa810c}{%
+           family={Statton},
+           familyi={S\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d2909786f82101d6593c0c4287980d3d}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Alaine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b6003c74caf95a5449cd78051982e472}{%
+           family={Quinlan},
+           familyi={Q\bibinitperiod},
+           given={Marina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=689677d3c119bdf58c60c16c7a195d60}{%
+           family={O’Regan},
+           familyi={O\bibinitperiod},
+           given={Declan\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=7fb86dd80e0f03c6216f34c175915053}{%
+           family={Rogdaki},
+           familyi={R\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2349444ca05b87115af2041700dd3ea2}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={Tiago\bibnamedelima Reis},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e01737569d5a590a521791bf42f7540f}{%
+           family={Rabiner},
+           familyi={R\bibinitperiod},
+           given={Eugenii\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=caf9a4dc4d33cb7f8221b4501cd131de}{%
+           family={Gunn},
+           familyi={G\bibinitperiod},
+           given={Roger\bibnamedelima N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=24b9558b3c7308391886ba7e6d8afac6}{%
+           family={Vernon},
+           familyi={V\bibinitperiod},
+           given={Anthony\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=cb02bbbdb19715dd78d62a07151b990f}{%
+           family={Natesan},
+           familyi={N\bibinitperiod},
+           given={Sridhar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=470b495d34cd59f49ac1a0087dda58da}{%
+           family={Howes},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{fullhash}{85bf516ca45b77eb00ab88b7ee3d6c83}
+      \strng{fullhashraw}{85bf516ca45b77eb00ab88b7ee3d6c83}
+      \strng{bibnamehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{authorbibnamehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{authornamehash}{bd1fa1614bf948c52f74fb0ccb8d1207}
+      \strng{authorfullhash}{85bf516ca45b77eb00ab88b7ee3d6c83}
+      \strng{authorfullhashraw}{85bf516ca45b77eb00ab88b7ee3d6c83}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{17}
+      \field{issn}{2158-3188}
+      \field{journaltitle}{Translational Psychiatry}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Transl Psychiatry}
+      \field{shorttitle}{The Relationship between Synaptic Density Marker {{SV2A}}, Glutamate and {{N-acetyl}} Aspartate Levels in Healthy Volunteers and Schizophrenia}
+      \field{title}{The Relationship between Synaptic Density Marker {{SV2A}}, Glutamate and {{N-acetyl}} Aspartate Levels in Healthy Volunteers and Schizophrenia: A Multimodal {{PET}} and Magnetic Resonance Spectroscopy Brain Imaging Study}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{393}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41398-021-01515-3
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/QG88TE6R/Onwordi et al. - 2021 - The relationship between synaptic density marker S.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41398-021-01515-3
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41398-021-01515-3
+      \endverb
+      \keyw{Glutamate,HMRS,PET,Schizophrenia,SV2A}
+    \endentry
+    \entry{wang_levetiracetam_2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=35e54a41d5db1ad72a7e4d20ca1c0a65}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Minjian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=357b0b769575e7caa1fa1e98ea04a1fe}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=20a4c69cd6d03288ab160c3be789e46d}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Xiaoju},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0bf9f676ed1e19ab55e338e2adb0f33}
+      \strng{fullhash}{7c8d9198b45d2e714a6a9ef221546d9d}
+      \strng{fullhashraw}{7c8d9198b45d2e714a6a9ef221546d9d}
+      \strng{bibnamehash}{7c8d9198b45d2e714a6a9ef221546d9d}
+      \strng{authorbibnamehash}{7c8d9198b45d2e714a6a9ef221546d9d}
+      \strng{authornamehash}{d0bf9f676ed1e19ab55e338e2adb0f33}
+      \strng{authorfullhash}{7c8d9198b45d2e714a6a9ef221546d9d}
+      \strng{authorfullhashraw}{7c8d9198b45d2e714a6a9ef221546d9d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1178-2021}
+      \field{journaltitle}{Neuropsychiatric Disease and Treatment}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{shortjournal}{NDT}
+      \field{title}{Levetiracetam Is Associated with Decrease in Subclinical Epileptiform Discharges and Improved Cognitive Functions in Pediatric Patients with Autism Spectrum Disorder}
+      \field{volume}{Volume 13}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{2321\bibrangedash 2326}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.2147/NDT.S143966
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/IU48CR2X/Wang et al. - 2017 - Levetiracetam is associated with decrease in subcl.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.dovepress.com/levetiracetam-is-associated-with-decrease-in-subclinical-epileptiform--peer-reviewed-article-NDT
+      \endverb
+      \verb{url}
+      \verb https://www.dovepress.com/levetiracetam-is-associated-with-decrease-in-subclinical-epileptiform--peer-reviewed-article-NDT
+      \endverb
+      \keyw{ASD,levetiracetam}
+    \endentry
+    \entry{roeske_modulation_2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=10faf04193c694c3949bf3ffd4b29bf9}{%
+           family={Roeske},
+           familyi={R\bibinitperiod},
+           given={Maxwell\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=12a70991bc6b0b7d21b31591b72fcc9e}{%
+           family={McHugo},
+           familyi={M\bibinitperiod},
+           given={Maureen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=156c5016c05016ca1eefda970357d463}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={Baxter},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4693d06a6eb565162f3fd2f5b90feb0e}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Kristan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bf27b87b29c657c144f542d0ad5234af}{%
+           family={Avery},
+           familyi={A\bibinitperiod},
+           given={Suzanne},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d71169aeb4d663a4eb1d1fc8547a309b}{%
+           family={Donahue},
+           familyi={D\bibinitperiod},
+           given={Manus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7998d581f235ee16af1a1892bf19352}{%
+           family={Heckers},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e566ad9dbeb9cdb2551ee7351323e4e3}
+      \strng{fullhash}{d6c6c8259bafbbc6467117562b2aa1a5}
+      \strng{fullhashraw}{d6c6c8259bafbbc6467117562b2aa1a5}
+      \strng{bibnamehash}{e566ad9dbeb9cdb2551ee7351323e4e3}
+      \strng{authorbibnamehash}{e566ad9dbeb9cdb2551ee7351323e4e3}
+      \strng{authornamehash}{e566ad9dbeb9cdb2551ee7351323e4e3}
+      \strng{authorfullhash}{d6c6c8259bafbbc6467117562b2aa1a5}
+      \strng{authorfullhashraw}{d6c6c8259bafbbc6467117562b2aa1a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{13}
+      \field{issn}{0893-133X, 1740-634X}
+      \field{journaltitle}{Neuropsychopharmacology}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{shortjournal}{Neuropsychopharmacol.}
+      \field{shorttitle}{Modulation of Hippocampal Activity in Schizophrenia with Levetiracetam}
+      \field{title}{Modulation of Hippocampal Activity in Schizophrenia with Levetiracetam: A Randomized, Double-Blind, Cross-over, Placebo-Controlled Trial}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1038/s41386-023-01730-0
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/7C6XH42L/Roeske et al. - 2023 - Modulation of hippocampal activity in schizophreni.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41386-023-01730-0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41386-023-01730-0
+      \endverb
+      \keyw{!,Hippocampus,levetiracetam}
+    \endentry
+    \entry{goff_levetiracetam_2020}{dataset}{}{}
+      \name{author}{1}{}{%
+        {{hash=961bcd4c795fb617fdc6981cc0126ca6}{%
+           family={Goff},
+           familyi={G\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{fullhash}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{fullhashraw}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{bibnamehash}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{authorbibnamehash}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{authornamehash}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{authorfullhash}{961bcd4c795fb617fdc6981cc0126ca6}
+      \strng{authorfullhashraw}{961bcd4c795fb617fdc6981cc0126ca6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{NCT03129360}
+      \field{title}{Levetiracetam in {{Early Psychosis}}}
+      \field{version}{1.9}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://clinicaltrials.gov/study/NCT03129360?id=NCT03129360&limit=10&rank=1&tab=results
+      \endverb
+      \verb{url}
+      \verb https://clinicaltrials.gov/study/NCT03129360?id=NCT03129360&limit=10&rank=1&tab=results
+      \endverb
+      \keyw{ASL,CBF,Hippocampus,levetiracetam,SZ}
+    \endentry
+    \entry{contreras-garcia_levetiracetam_2022}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=62938c09badf20b0161c2893ede6ab2b}{%
+           family={Contreras-García},
+           familyi={C\bibinithyphendelim G\bibinitperiod},
+           given={Itzel\bibnamedelima Jatziri},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4e63c25203efc017dcd605c56eecdf98}{%
+           family={Cárdenas-Rodríguez},
+           familyi={C\bibinithyphendelim R\bibinitperiod},
+           given={Noemí},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2ca0d974730316bf3bebd40aa12ae363}{%
+           family={Romo-Mancillas},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0cbee705f44e79ad6481dd547e740560}{%
+           family={Bandala},
+           familyi={B\bibinitperiod},
+           given={Cindy},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fd33e876bf7191635c9e9c257d55c17}{%
+           family={Zamudio},
+           familyi={Z\bibinitperiod},
+           given={Sergio\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=bcabc6a51ed5fcda0e0afd72b871b4d5}{%
+           family={Gómez-Manzo},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Saúl},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7543c49d6ceef60b215f561a89012760}{%
+           family={Hernández-Ochoa},
+           familyi={H\bibinithyphendelim O\bibinitperiod},
+           given={Beatriz},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a54ff8dbe4feb5979c8a02cff9261a9d}{%
+           family={Mendoza-Torreblanca},
+           familyi={M\bibinithyphendelim T\bibinitperiod},
+           given={Julieta\bibnamedelima Griselda},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1c53f15ceeaf6e674a964f5f5a07b086}{%
+           family={Pichardo-Macías},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={Luz\bibnamedelima Adriana},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{fullhash}{d72251c2e60e1f8562979f42c0fe9f5a}
+      \strng{fullhashraw}{d72251c2e60e1f8562979f42c0fe9f5a}
+      \strng{bibnamehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{authorbibnamehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{authornamehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{authorfullhash}{d72251c2e60e1f8562979f42c0fe9f5a}
+      \strng{authorfullhashraw}{d72251c2e60e1f8562979f42c0fe9f5a}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1424-8247}
+      \field{journaltitle}{Pharmaceuticals}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shorttitle}{Levetiracetam {{Mechanisms}} of {{Action}}}
+      \field{title}{Levetiracetam {{Mechanisms}} of {{Action}}: {{From Molecules}} to {{Systems}}}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{475}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ph15040475
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/HS8X3BET/Contreras-García et al. - 2022 - Levetiracetam Mechanisms of Action From Molecules.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8247/15/4/475
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8247/15/4/475
+      \endverb
+      \keyw{antiepileptic drugs,calcium homeostasis,GABAergic system,levetiracetam,neuroinflammation,neuroprotection,SV2A}
+    \endentry
+    \entry{luzadriana_effect_2018}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=bc17be7536929e4523aa5f65c482b8e0}{%
+           family={Luz\bibnamedelima Adriana},
+           familyi={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Pichardo\bibnamedelima Macías},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0eba1e44b06d751fe8d3fe24d668fe06}{%
+           family={Blanca\bibnamedelima Alcira},
+           familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Ramírez\bibnamedelima Mendiola},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3261257e38c67e3718ab1cce535fe50a}{%
+           family={Itzel\bibnamedelima Jatziri},
+           familyi={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Contreras\bibnamedelima García},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fcb9f7e6eeccd91ef2fcd081d55da9b3}{%
+           family={Sergio\bibnamedelima Roberto},
+           familyi={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Zamudio\bibnamedelima Hernández},
+           giveni={Z\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=3ed478515c0cb4361fc996ad39917072}{%
+           family={Juan\bibnamedelima Luis},
+           familyi={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Chávez\bibnamedelima Pacheco},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=33f653e0575cdcc490a7e3bc6f17b088}{%
+           family={Karla\bibnamedelima Berenice},
+           familyi={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Sánchez\bibnamedelima Huerta},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6c4eda9182ac5eeeb08f57c9b1d95d4b}{%
+           family={Julieta\bibnamedelima Griselda},
+           familyi={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Mendoza\bibnamedelima Torreblanca},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7fa50aebea708208833656ca010ae65e}
+      \strng{fullhash}{b4ccb7fe2cfa1f807fb153fa3a7b112a}
+      \strng{fullhashraw}{b4ccb7fe2cfa1f807fb153fa3a7b112a}
+      \strng{bibnamehash}{7fa50aebea708208833656ca010ae65e}
+      \strng{authorbibnamehash}{7fa50aebea708208833656ca010ae65e}
+      \strng{authornamehash}{7fa50aebea708208833656ca010ae65e}
+      \strng{authorfullhash}{b4ccb7fe2cfa1f807fb153fa3a7b112a}
+      \strng{authorfullhashraw}{b4ccb7fe2cfa1f807fb153fa3a7b112a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09201211}
+      \field{journaltitle}{Epilepsy Research}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shortjournal}{Epilepsy Research}
+      \field{title}{Effect of Levetiracetam on Extracellular Amino Acid Levels in the Dorsal Hippocampus of Rats with Temporal Lobe Epilepsy}
+      \field{volume}{140}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{111\bibrangedash 119}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.eplepsyres.2018.01.004
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/94GD9ANB/Luz Adriana et al. - 2018 - Effect of levetiracetam on extracellular amino acid levels in the dorsal hippocampus of rats with te.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0920121117304710
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0920121117304710
+      \endverb
+      \keyw{GABA,levetiracetam,SV2A}
+    \endentry
+    \entry{contreras-garcia_synaptic_2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=62938c09badf20b0161c2893ede6ab2b}{%
+           family={Contreras-García},
+           familyi={C\bibinithyphendelim G\bibinitperiod},
+           given={Itzel\bibnamedelima Jatziri},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a6b93408d23074b4f672e9fddadb82df}{%
+           family={Gómez-Lira},
+           familyi={G\bibinithyphendelim L\bibinitperiod},
+           given={Gisela},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8ad3030058734b35c95cd7b03dbd42fc}{%
+           family={Phillips-Farfán},
+           familyi={P\bibinithyphendelim F\bibinitperiod},
+           given={Bryan\bibnamedelima Víctor},
+           giveni={B\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=1c53f15ceeaf6e674a964f5f5a07b086}{%
+           family={Pichardo-Macías},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={Luz\bibnamedelima Adriana},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a5bcd9a2f2b18ce806794cb53204ee09}{%
+           family={García-Cruz},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={Mercedes\bibnamedelima Edna},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4b4087af17ba3b445ef2bb50055d6d24}{%
+           family={Chávez-Pacheco},
+           familyi={C\bibinithyphendelim P\bibinitperiod},
+           given={Juan\bibnamedelima Luis},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=bce51f7eb46a5a1fc592e8ff8bf4aa13}{%
+           family={Mendoza-Torreblanca},
+           familyi={M\bibinithyphendelim T\bibinitperiod},
+           given={Julieta\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{fullhash}{e4f0dc65c03e8a94d611ad00b78d7606}
+      \strng{fullhashraw}{e4f0dc65c03e8a94d611ad00b78d7606}
+      \strng{bibnamehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{authorbibnamehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{authornamehash}{9f2fed73e0be439d644c8bb39b15b6fe}
+      \strng{authorfullhash}{e4f0dc65c03e8a94d611ad00b78d7606}
+      \strng{authorfullhashraw}{e4f0dc65c03e8a94d611ad00b78d7606}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{issn}{2076-3425}
+      \field{journaltitle}{Brain Sciences}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{5}
+      \field{shortjournal}{Brain Sciences}
+      \field{title}{Synaptic {{Vesicle Protein 2A Expression}} in {{Glutamatergic Terminals Is Associated}} with the {{Response}} to {{Levetiracetam Treatment}}}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{531}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/brainsci11050531
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/9UFRIUDB/Contreras-García et al. - 2021 - Synaptic Vesicle Protein 2A Expression in Glutamatergic Terminals Is Associated with the Response to.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3425/11/5/531
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3425/11/5/531
+      \endverb
+      \keyw{Glutamate,Review,SV2A}
+    \endentry
+    \entry{meehan_levetiracetam_2012}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=e2aa8f62963bfcf551239dd0bee2df1c}{%
+           family={Meehan},
+           familyi={M\bibinitperiod},
+           given={Anna\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3f052ab4ab0cf14ea4a3452428e8e89c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=28208d10a6cbdc2904882536493423c6}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Li‐Lian},
+           giveni={L\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=05226b63194448c34806e9a67492d05f}{%
+           family={Rothman},
+           familyi={R\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{db2386cd1c8b1b79a3f4fe8086b4c0b5}
+      \strng{fullhash}{6ce9403fef01e3f33986d8fb09738fb1}
+      \strng{fullhashraw}{6ce9403fef01e3f33986d8fb09738fb1}
+      \strng{bibnamehash}{6ce9403fef01e3f33986d8fb09738fb1}
+      \strng{authorbibnamehash}{6ce9403fef01e3f33986d8fb09738fb1}
+      \strng{authornamehash}{db2386cd1c8b1b79a3f4fe8086b4c0b5}
+      \strng{authorfullhash}{6ce9403fef01e3f33986d8fb09738fb1}
+      \strng{authorfullhashraw}{6ce9403fef01e3f33986d8fb09738fb1}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0013-9580, 1528-1167}
+      \field{journaltitle}{Epilepsia}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Epilepsia}
+      \field{title}{Levetiracetam Has an Activity‐dependent Effect on Inhibitory Transmission}
+      \field{volume}{53}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{469\bibrangedash 476}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1111/j.1528-1167.2011.03392.x
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/BVWUUTM7/Meehan et al. - 2012 - Levetiracetam has an activity‐dependent effect on .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1528-1167.2011.03392.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1528-1167.2011.03392.x
+      \endverb
+      \keyw{levetiracetam}
+    \endentry
+    \entry{yang_prolonged_2007}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=29df46423d59f217f731c2b0f985fec3}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xiao‐Feng},
+           giveni={X\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=a435cdbf33dbb04c0c5200b89b776653}{%
+           family={Weisenfeld},
+           familyi={W\bibinitperiod},
+           given={Aryan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=05226b63194448c34806e9a67492d05f}{%
+           family={Rothman},
+           familyi={R\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f312b7f846f52aecaf9143ef7ba005a}
+      \strng{fullhash}{98a4cd2ded00bee45934493f90d6518a}
+      \strng{fullhashraw}{98a4cd2ded00bee45934493f90d6518a}
+      \strng{bibnamehash}{98a4cd2ded00bee45934493f90d6518a}
+      \strng{authorbibnamehash}{98a4cd2ded00bee45934493f90d6518a}
+      \strng{authornamehash}{1f312b7f846f52aecaf9143ef7ba005a}
+      \strng{authorfullhash}{98a4cd2ded00bee45934493f90d6518a}
+      \strng{authorfullhashraw}{98a4cd2ded00bee45934493f90d6518a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0013-9580, 1528-1167}
+      \field{journaltitle}{Epilepsia}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{Epilepsia}
+      \field{title}{Prolonged {{Exposure}} to {{Levetiracetam Reveals}} a {{Presynaptic Effect}} on {{Neurotransmission}}}
+      \field{volume}{48}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{1861\bibrangedash 1869}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1111/j.1528-1167.2006.01132.x
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/4WXWGSP6/Yang et al. - 2007 - Prolonged Exposure to Levetiracetam Reveals a Presynaptic Effect on Neurotransmission.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1528-1167.2006.01132.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1528-1167.2006.01132.x
+      \endverb
+    \endentry
+    \entry{lee_levetiracetam_2009}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1dd48df2323f5f57723dca90641c6a49}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chun‐Yao},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=7a9c4ae352211f31c6bdffb909db895b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chih‐Chuan},
+           giveni={C\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=09b739207dda27bdc4e49e9c4a5d722e}{%
+           family={Liou},
+           familyi={L\bibinitperiod},
+           given={Horng‐Huei},
+           giveni={H\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{51e8658004cf9fde9df40abbd4be9246}
+      \strng{fullhash}{b37bdc7acb40e47a10491f6539d361ed}
+      \strng{fullhashraw}{b37bdc7acb40e47a10491f6539d361ed}
+      \strng{bibnamehash}{b37bdc7acb40e47a10491f6539d361ed}
+      \strng{authorbibnamehash}{b37bdc7acb40e47a10491f6539d361ed}
+      \strng{authornamehash}{51e8658004cf9fde9df40abbd4be9246}
+      \strng{authorfullhash}{b37bdc7acb40e47a10491f6539d361ed}
+      \strng{authorfullhashraw}{b37bdc7acb40e47a10491f6539d361ed}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0007-1188, 1476-5381}
+      \field{journaltitle}{British Journal of Pharmacology}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{7}
+      \field{shortjournal}{British J Pharmacology}
+      \field{title}{Levetiracetam Inhibits Glutamate Transmission through Presynaptic {{P}}/{{Q}}‐type Calcium Channels on the Granule Cells of the Dentate Gyrus}
+      \field{volume}{158}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{1753\bibrangedash 1762}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.1476-5381.2009.00463.x
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/H6NKDHYI/Lee et al. - 2009 - Levetiracetam inhibits glutamate transmission through presynaptic PQ‐type calcium channels on the g.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/j.1476-5381.2009.00463.x
+      \endverb
+      \verb{url}
+      \verb https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/j.1476-5381.2009.00463.x
+      \endverb
+    \endentry
+    \entry{meehan_new_2011}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e2aa8f62963bfcf551239dd0bee2df1c}{%
+           family={Meehan},
+           familyi={M\bibinitperiod},
+           given={Anna\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3f052ab4ab0cf14ea4a3452428e8e89c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=eb82612eed35d57e3dd7723296ecdd67}{%
+           family={McAdams},
+           familyi={M\bibinitperiod},
+           given={Brian\bibnamedelima D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ca82890b8c5379eb67baaccc4041ecec}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={LiLian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=05226b63194448c34806e9a67492d05f}{%
+           family={Rothman},
+           familyi={R\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{db2386cd1c8b1b79a3f4fe8086b4c0b5}
+      \strng{fullhash}{1443352d11a4683b78cb2c4987416d9e}
+      \strng{fullhashraw}{1443352d11a4683b78cb2c4987416d9e}
+      \strng{bibnamehash}{1443352d11a4683b78cb2c4987416d9e}
+      \strng{authorbibnamehash}{1443352d11a4683b78cb2c4987416d9e}
+      \strng{authornamehash}{db2386cd1c8b1b79a3f4fe8086b4c0b5}
+      \strng{authorfullhash}{1443352d11a4683b78cb2c4987416d9e}
+      \strng{authorfullhashraw}{1443352d11a4683b78cb2c4987416d9e}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0022-3077, 1522-1598}
+      \field{journaltitle}{Journal of Neurophysiology}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Neurophysiology}
+      \field{shorttitle}{A New Mechanism for Antiepileptic Drug Action}
+      \field{title}{A New Mechanism for Antiepileptic Drug Action: Vesicular Entry May Mediate the Effects of Levetiracetam}
+      \field{volume}{106}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{1227\bibrangedash 1239}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1152/jn.00279.2011
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/YAEA4RA9/Meehan et al. - 2011 - A new mechanism for antiepileptic drug action vesicular entry may mediate the effects of levetirace.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.physiology.org/doi/10.1152/jn.00279.2011
+      \endverb
+      \verb{url}
+      \verb https://www.physiology.org/doi/10.1152/jn.00279.2011
+      \endverb
+      \keyw{E/I,levetiracetam}
+    \endentry
+    \entry{loscher_synaptic_2016}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=4c1a9bf1de6282c8fa41a98256e879cc}{%
+           family={Löscher},
+           familyi={L\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e763693d46e481b933114d2344d8bb70}{%
+           family={Gillard},
+           familyi={G\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=60626fce0d8e327e488ae8ffcca466d0}{%
+           family={Sands},
+           familyi={S\bibinitperiod},
+           given={Zara\bibnamedelima A.},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=22b6f6b93c2cf4f4b07485785ac9b589}{%
+           family={Kaminski},
+           familyi={K\bibinitperiod},
+           given={Rafal\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7600a7a20cb47ee4251ed15e933018d6}{%
+           family={Klitgaard},
+           familyi={K\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b133abb4142284304f9d05f20f2352c3}
+      \strng{fullhash}{ccaf08e9c5d40f7aec44762d1587f335}
+      \strng{fullhashraw}{ccaf08e9c5d40f7aec44762d1587f335}
+      \strng{bibnamehash}{ccaf08e9c5d40f7aec44762d1587f335}
+      \strng{authorbibnamehash}{ccaf08e9c5d40f7aec44762d1587f335}
+      \strng{authornamehash}{b133abb4142284304f9d05f20f2352c3}
+      \strng{authorfullhash}{ccaf08e9c5d40f7aec44762d1587f335}
+      \strng{authorfullhashraw}{ccaf08e9c5d40f7aec44762d1587f335}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1172-7047, 1179-1934}
+      \field{journaltitle}{CNS Drugs}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{CNS Drugs}
+      \field{title}{Synaptic {{Vesicle Glycoprotein 2A Ligands}} in the {{Treatment}} of {{Epilepsy}} and {{Beyond}}}
+      \field{volume}{30}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{1055\bibrangedash 1077}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/s40263-016-0384-x
+      \endverb
+      \verb{file}
+      \verb /Users/k21089512/Zotero/storage/HDJR55J9/Löscher et al. - 2016 - Synaptic Vesicle Glycoprotein 2A Ligands in the Tr.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s40263-016-0384-x
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s40263-016-0384-x
+      \endverb
+      \keyw{levetiracetam,SV2A,UCB-J}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -5,7 +5,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <meta name="description" content="Plots I have used in this document">
 
     <title>Plots</title>
     <style>
@@ -206,102 +205,90 @@
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
      <p>Here is a graph made with totally fabricated data because I enjoy doing data visualisation and even though I don’t have the data yet, I do have a pretty graph.</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="cell-fig-lev_hc_vs_sz" class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrain)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="cell-fig-lev_hc_vs_sz" class="cell" data-layout-align="center" data-cache="true" data-fig-asp="0.9">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>library(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>library(ggrain)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>library(wesanderson)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>glx <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.45</span>, <span class="at">sd=</span><span class="fl">0.10</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.45</span>, <span class="at">sd=</span><span class="fl">0.09</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.69</span>, <span class="at">sd=</span><span class="fl">0.11</span>), <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="at">mean=</span><span class="fl">0.45</span>, <span class="at">sd=</span><span class="fl">0.11</span>))</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>group <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">replicate</span>(<span class="dv">50</span>, <span class="st">"HC"</span>), <span class="fu">replicate</span>(<span class="dv">50</span>, <span class="st">"SZ"</span>))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>dosing <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Placebo"</span>), <span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Drug"</span>), <span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Placebo"</span>), <span class="fu">replicate</span>(<span class="dv">25</span>, <span class="st">"Drug"</span>))</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">replicate</span>(<span class="dv">2</span>, <span class="dv">101</span><span class="sc">:</span><span class="dv">125</span>), <span class="fu">replicate</span>(<span class="dv">2</span>, <span class="dv">201</span><span class="sc">:</span><span class="dv">225</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>glx <span class="op">&lt;-</span> c(rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="fl">0.45</span>, sd<span class="op">=</span><span class="fl">0.10</span>), rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="fl">0.45</span>, sd<span class="op">=</span><span class="fl">0.09</span>), rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="fl">0.69</span>, sd<span class="op">=</span><span class="fl">0.11</span>), rnorm(<span class="dv">25</span>, mean<span class="op">=</span><span class="fl">0.45</span>, sd<span class="op">=</span><span class="fl">0.11</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>group <span class="op">&lt;-</span> c(replicate(<span class="dv">50</span>, <span class="st">"HC"</span>), replicate(<span class="dv">50</span>, <span class="st">"SZ"</span>))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>dosing <span class="op">&lt;-</span> c(replicate(<span class="dv">25</span>, <span class="st">"Placebo"</span>), replicate(<span class="dv">25</span>, <span class="st">"Drug"</span>), replicate(<span class="dv">25</span>, <span class="st">"Placebo"</span>), replicate(<span class="dv">25</span>, <span class="st">"Drug"</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">id</span> <span class="op">&lt;-</span> c(replicate(<span class="dv">2</span>, <span class="dv">101</span>:<span class="dv">125</span>), replicate(<span class="dv">2</span>, <span class="dv">201</span>:<span class="dv">225</span>))</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(id, group, dosing, glx)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>dosing <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>dosing, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">'Placebo'</span>, <span class="st">'Drug'</span>))</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>group <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>group, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">'HC'</span>, <span class="st">'SZ'</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">&lt;-</span> data.frame(<span class="bu">id</span>, group, dosing, glx)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>data$dosing <span class="op">&lt;-</span> factor(data$dosing, levels <span class="op">=</span> c(<span class="st">'Placebo'</span>, <span class="st">'Drug'</span>))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>data$group <span class="op">&lt;-</span> factor(data$group, levels <span class="op">=</span> c(<span class="st">'HC'</span>, <span class="st">'SZ'</span>))</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>colour_map <span class="ot">&lt;-</span> <span class="st">"Pastel1"</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>pal <span class="ot">&lt;-</span> <span class="fu">wes_palette</span>(<span class="st">"GrandBudapest1"</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">type =</span> <span class="st">"discrete"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>colour_map <span class="op">&lt;-</span> <span class="st">"Pastel1"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>pal <span class="op">&lt;-</span> wes_palette(<span class="st">"GrandBudapest1"</span>, n<span class="op">=</span><span class="dv">2</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"discrete"</span>)</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># wes_palette("GrandBudapest1", type = "discrete", n=2)</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># jpeg(file="files/rain_plot.jpeg", height = 5000, width = 3500, res=400)</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>rainplot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data[data<span class="sc">$</span>dosing <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'Placebo'</span>, <span class="st">'Drug'</span>),], <span class="fu">aes</span>(dosing, glx, <span class="at">fill =</span> group, <span class="at">color=</span>group)) <span class="sc">+</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_rain</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">rain.side =</span> <span class="st">'f2x2'</span>, <span class="at">id.long.var =</span> <span class="st">"id"</span>,</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            <span class="at">violin.args =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> .<span class="dv">7</span>)) <span class="sc">+</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"line"</span>, <span class="fu">aes</span>(<span class="at">group =</span> group, <span class="at">color =</span> group), <span class="at">lwd=</span><span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>rainplot <span class="op">&lt;-</span> ggplot(data[data$dosing <span class="op">%</span><span class="kw">in</span><span class="op">%</span> c(<span class="st">'Placebo'</span>, <span class="st">'Drug'</span>),], aes(dosing, glx, fill <span class="op">=</span> group, color<span class="op">=</span>group)) <span class="op">+</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    geom_rain(alpha <span class="op">=</span> <span class="fl">.5</span>, rain.side <span class="op">=</span> <span class="st">'f2x2'</span>, <span class="bu">id</span>.<span class="bu">long</span>.var <span class="op">=</span> <span class="st">"id"</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            violin.args <span class="op">=</span> <span class="bu">list</span>(color <span class="op">=</span> <span class="st">"black"</span>, alpha <span class="op">=</span> <span class="fl">.7</span>)) <span class="op">+</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    stat_summary(fun <span class="op">=</span> mean, geom <span class="op">=</span> <span class="st">"line"</span>, aes(group <span class="op">=</span> group, color <span class="op">=</span> group), lwd<span class="op">=</span><span class="fl">1.5</span>) <span class="op">+</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># stat_summary(fun = mean, geom = "point", aes(group = group, color = group)) +</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Comparison of Glu levels change between</span><span class="sc">\n</span><span class="st">placebo and levetiracetam in HC and SZ"</span>,</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Dosing"</span>,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Concentration of Glu"</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'Placebo'</span>,<span class="st">'Levetiracetam'</span>)) <span class="sc">+</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_classic</span>(<span class="at">base_size =</span> <span class="dv">18</span>) <span class="sc">+</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>), <span class="at">legend.position=</span><span class="st">"right"</span>, <span class="at">aspect.ratio=</span><span class="dv">4</span><span class="sc">/</span><span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> pal) <span class="sc">+</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> pal) <span class="sc">+</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    labs(</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        title <span class="op">=</span> <span class="st">"Comparison of Glu levels change between</span><span class="ch">\n</span><span class="st">placebo and levetiracetam in HC and SZ"</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="st">"Dosing"</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        y <span class="op">=</span> <span class="st">"Concentration of Glu"</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    ) <span class="op">+</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    scale_x_discrete(labels <span class="op">=</span> c(<span class="st">'Placebo'</span>,<span class="st">'Levetiracetam'</span>)) <span class="op">+</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    theme_classic(base_size <span class="op">=</span> <span class="dv">18</span>) <span class="op">+</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    theme(plot.title <span class="op">=</span> element_text(hjust <span class="op">=</span> <span class="fl">0.5</span>), legend.position<span class="op">=</span><span class="st">"right"</span>, aspect.ratio<span class="op">=</span><span class="dv">4</span><span class="op">/</span><span class="dv">3</span>) <span class="op">+</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    scale_fill_manual(values <span class="op">=</span> pal) <span class="op">+</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    scale_color_manual(values <span class="op">=</span> pal) <span class="op">+</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    guides(fill <span class="op">=</span> guide_legend()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Duplicated aesthetics after name standardisation: alpha</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="co"># theme(</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     legend.title.position = "left",</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     legend.title = element_text(angle = 90, hjust = 0.5)</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># )</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># guides(fill = 'none', color = 'none')</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># scale_fill_brewer(palette = colour_map) +</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># scale_color_brewer(palette = colour_map) </span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(rainplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using the `size` aesthetic with geom_polygon was deprecated in ggplot2 3.4.0.
+<pre><code>Warning: Duplicated aesthetics after name standardisation: alphaWarning: Using the `size` aesthetic with geom_polygon was deprecated in ggplot2 3.4.0.
 ℹ Please use the `linewidth` aesthetic instead.</code></pre>
 </div>
-<div class="cell-output-display">
+<div class="cell-output cell-output-display">
 <div id="fig-lev_hc_vs_sz" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-lev_hc_vs_sz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="plots_files/figure-html/fig-lev_hc_vs_sz-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="plots_files/figure-html/fig-lev_hc_vs_sz-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a>
+<a href="plots.embed_files/figure-html/fig-lev_hc_vs_sz-output-2.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="plots.embed_files/figure-html/fig-lev_hc_vs_sz-output-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lev_hc_vs_sz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Comparison of Glu levels change between placebo and levetiracetam in HC and SZ
+Figure&nbsp;1: Comparison of Glu levels change between placebo and levetiracetam in HC and SZ
 </figcaption>
 </figure>
 </div>
 </div>
 </div></div>
 <p>Here is a gantt chart depicting the plan for my PhD:</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-gantt-chart" class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plan)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>gt_object <span class="ot">&lt;-</span> <span class="fu">read.gantt</span>(<span class="st">"gantt.csv"</span>) </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(gt_object,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># event.label='Report Date', event.time='2024-08-27',</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.event=</span><span class="fu">c</span>(<span class="st">"red"</span>),</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.done=</span><span class="fu">c</span>(<span class="st">"lightblue"</span>),</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.notdone=</span><span class="fu">c</span>(<span class="st">"lightblue"</span>),</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">time.labels.by=</span><span class="st">"2 months"</span>,</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">time.lines.by=</span><span class="st">"1 month"</span>,</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">main=</span><span class="st">"PhD timeline"</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-gantt-chart" class="cell" data-cache="true" data-fig-width="6.5">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>library(plan)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>gt_object <span class="op">&lt;-</span> read.gantt(<span class="st">"gantt.csv"</span>) </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>plot(gt_object,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># event.label='Report Date', event.time='2024-08-27',</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    col.event<span class="op">=</span>c(<span class="st">"red"</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    col.done<span class="op">=</span>c(<span class="st">"lightblue"</span>),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    col.notdone<span class="op">=</span>c(<span class="st">"lightblue"</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    time.labels.by<span class="op">=</span><span class="st">"2 months"</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    time.lines.by<span class="op">=</span><span class="st">"1 month"</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    main<span class="op">=</span><span class="st">"PhD timeline"</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
 <div id="fig-gantt-chart" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="plots_files/figure-html/fig-gantt-chart-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="plots_files/figure-html/fig-gantt-chart-1.png" class="img-fluid figure-img" width="624"></a>
+<a href="plots.embed_files/figure-html/fig-gantt-chart-output-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="plots.embed_files/figure-html/fig-gantt-chart-output-1.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gantt-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Gantt chart of planned work during my PhD
+Figure&nbsp;2: Gantt chart of planned work during my PhD
 </figcaption>
 </figure>
 </div>
 </div>
 </div></div>
 <div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Comparison of Glu levels change between placebo and levetiracetam in HC and SZ</span>
-<span class="glightbox-desc lightbox-desc-2">Gantt chart of planned work during my PhD</span>
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: Comparison of Glu levels change between placebo and levetiracetam in HC and SZ</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;2: Gantt chart of planned work during my PhD</span>
 </div>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
@@ -712,7 +699,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","loop":false});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
